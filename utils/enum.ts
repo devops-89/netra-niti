@@ -1,7 +1,11 @@
 export enum COLORS {
-  HEADER_BG = "rgba(255, 255, 255, 0.90)",
+  HEADER_BG = "rgba(255, 255, 255, 0.70)",
   TEXT_COLOR = "#484848",
   PRIMARY_BUTTON = "#F28C4D",
   WHITE = "#ffffff",
   PRIMARY = "#FE9049",
+  SECONDARY = "#0671B7",
+  TEXT_SECONDARY_COLOR = "#111D15",
+  TEXT_TERNARY_COLOR = "#666",
+  TRANSPARENT = "transparent",
 }

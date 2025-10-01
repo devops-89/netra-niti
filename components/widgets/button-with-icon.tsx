@@ -10,6 +10,7 @@ const ButtonWithIcon = ({
   icon,
   iconBgColor = COLORS.WHITE,
   iconSx,
+  iconPosition = "left",
   sx,
   ...props
 }: {
@@ -18,6 +19,7 @@ const ButtonWithIcon = ({
   icon?: ReactElement<any>;
   iconBgColor?: string;
   iconSx?: SxProps<Theme>;
+  iconPosition?: "left" | "right";
   sx?: SxProps<Theme>;
 } & Omit<ButtonProps, "sx">) => {
   const renderedIcon = icon ? (
@@ -89,7 +91,8 @@ const ButtonWithIcon = ({
             boxShadow: 3,
             overflow: "hidden",
             position: "absolute",
-            left: 0,
+            left: iconPosition === "left" ? 0 : undefined,
+            right: iconPosition === "right" ? 0 : undefined,
           }}
         >
           <Box
@@ -139,7 +142,8 @@ const ButtonWithIcon = ({
             overflow: "hidden",
             height: "2.5rem",
             minWidth: "11ch",
-            paddingLeft: "3.5rem", // Add space for the icon
+            paddingLeft: iconPosition === "left" ? "3.5rem" : 0,
+            paddingRight: iconPosition === "right" ? "3.5rem" : 0,
           }}
         >
           <Box
