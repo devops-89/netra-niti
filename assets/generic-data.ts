@@ -1,8 +1,10 @@
 import {
   APPOINTMENT_CARD_PROPS,
+  COUNT_UP_CARD_PROPS,
   LIST,
   PREVENTION_CARD_PROPS,
   SERVICE_CARD_PROPS,
+  TESTIMONIAL_CARD_PROPS,
 } from "@/utils/types";
 import serviceImage1 from "@/homepage/about-us/image1.jpg";
 import serviceImage2 from "@/homepage/about-us/vision-2.jpg";
@@ -13,6 +15,8 @@ import prevention4 from "@/homepage/preventing/regular-eye.jpg";
 import appointment1 from "@/homepage/appointment/schedule.png";
 import appointment2 from "@/homepage/appointment/meet.png";
 import appointment3 from "@/homepage/appointment/clear-plan.png";
+import profile from "@/homepage/testimonial/avatar.jpg";
+import { YouTube, X, Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 export const navbar_links = [
   {
     label: "Home",
@@ -117,5 +121,109 @@ export const APPOINTMENT_CARD_DATA: APPOINTMENT_CARD_PROPS[] = [
     heading: "Get a Clear Plan",
     description:
       "Whether it’s treatment, lab tests, lifestyle changes, or a referral you’ll leave with a personalized plan that makes sense.",
+  },
+];
+
+export const TESTIMONIAL_CARD_DATA: TESTIMONIAL_CARD_PROPS[] = [
+  {
+    img: profile,
+    name: "John Anderson",
+    designation: "CEO at Innovate Solutions",
+    description:
+      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+  },
+  {
+    img: profile,
+    name: "John Anderson",
+    designation: "CEO at Innovate Solutions",
+    description:
+      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+  },
+  {
+    img: profile,
+    name: "John Anderson",
+    designation: "CEO at Innovate Solutions",
+    description:
+      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+  },
+  {
+    img: profile,
+    name: "John Anderson",
+    designation: "CEO at Innovate Solutions",
+    description:
+      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+  },
+  {
+    img: profile,
+    name: "John Anderson",
+    designation: "CEO at Innovate Solutions",
+    description:
+      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+  },
+  {
+    img: profile,
+    name: "John Anderson",
+    designation: "CEO at Innovate Solutions",
+    description:
+      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+  },
+];
+
+export const FOOTER_LINKS = [
+  {
+    label: "Home",
+    url: "/",
+  },
+  {
+    label: "Services",
+    url: "/services",
+  },
+  {
+    label: "Blog",
+    url: "/blog",
+  },
+  {
+    label: "Contact Us",
+    url: "/contact-us",
+  },
+  {
+    label: "About",
+    url: "/about-us",
+  },
+];
+
+export const FOOTER_SOCIAL_ICONS = [
+  {
+    icon: YouTube,
+  },
+  {
+    icon: Facebook,
+  },
+  {
+    icon: X,
+  },
+  {
+    icon: Instagram,
+  },
+  {
+    icon: LinkedIn,
+  },
+];
+
+export const ABOUT_COUNTER_NUMBER: COUNT_UP_CARD_PROPS[] = [
+  {
+    number: 12,
+    suffix: "+",
+    title: "Blogs Published",
+  },
+  {
+    number: 18,
+    suffix: "K+",
+    title: "Views on Finsweet",
+  },
+  {
+    number: 30,
+    suffix: "K+",
+    title: "Total active Users",
   },
 ];

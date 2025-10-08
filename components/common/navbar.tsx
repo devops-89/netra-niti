@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { navbar_links } from "@/assets/generic-data";
@@ -8,7 +6,9 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import logo from "@/logo/logo.svg";
 import Image from "next/image";
-import ButtonWithIcon from "./button-with-icon";
+import ButtonWithIcon from "../widgets/button-with-icon";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -22,6 +22,7 @@ const Navbar = () => {
   }, []);
 
   const bgColor = scrolled ? COLORS.HEADER_BG : COLORS.WHITE;
+  const pathname = usePathname();
 
   return (
     <Box sx={{ position: "sticky", top: 10, zIndex: 1200 }}>
@@ -33,7 +34,7 @@ const Navbar = () => {
           sx={{
             backgroundColor: bgColor,
             height: "65px",
-            borderRadius: "62px",
+            borderRadius: "10rem",
             px: 2,
             backdropFilter: "blur(10px)",
             transition: "background-color 0.25s ease",
@@ -41,12 +42,21 @@ const Navbar = () => {
         >
           <Stack direction={"row"} alignItems={"center"} spacing={5}>
             {navbar_links.map((val, i) => (
-              <Typography
-                sx={{ fontSize: 16, fontWeight: 700, lineHeight: "15px" }}
+              <Link
+                href={val.url}
                 key={i}
+                style={{
+                  color: pathname === val.url ? COLORS.SECONDARY : COLORS.BLACK,
+                  textDecoration: pathname === val.url ? "none" : "none",
+                }}
+                className={pathname === val.url ? "active_link" : ""}
               >
-                {val.label}
-              </Typography>
+                <Typography
+                  sx={{ fontSize: 16, fontWeight: 700, lineHeight: "15px" }}
+                >
+                  {val.label}
+                </Typography>
+              </Link>
             ))}
           </Stack>
           <Image src={logo} alt="" width={180} />

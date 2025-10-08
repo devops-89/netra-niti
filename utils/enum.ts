@@ -8,4 +8,5 @@ export enum COLORS {
   TEXT_SECONDARY_COLOR = "#111D15",
   TEXT_TERNARY_COLOR = "#666",
   TRANSPARENT = "transparent",
+  BLACK = "#000000",
 }

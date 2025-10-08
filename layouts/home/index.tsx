@@ -7,6 +7,7 @@ import NetraNitiSection from "./netra-niti-section";
 import Preventing from "./preventing";
 import Approach from "./approach";
 import SupporativeCare from "./supporative-care";
+import HomeTestimonial from "./home-testimonial";
 
 const HomePageLayout = () => {
   return (
@@ -28,14 +29,20 @@ const HomePageLayout = () => {
         <Box
           sx={{
             backgroundColor: COLORS.WHITE,
-            borderRadius: "30px",
-            px: 3,
+            borderTopLeftRadius: "30px",
+            borderTopRightRadius: "30px",
+
             py: 7,
             mt: 4,
           }}
         >
-          <Approach />
-          <SupporativeCare />
+          <Box>
+            <Approach />
+            <SupporativeCare />
+          </Box>
+          <Box sx={{ mt: 4 }}>
+            <HomeTestimonial />
+          </Box>
         </Box>
       </Container>
     </Box>

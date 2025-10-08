@@ -47,7 +47,7 @@ const AppointmentCard = ({
         </Typography>
         <Typography
           sx={{
-            fontSize: 17,
+            fontSize: 15,
             fontFamily: poppins.style.fontFamily,
             textAlign: "center",
             color: COLORS.SECONDARY,

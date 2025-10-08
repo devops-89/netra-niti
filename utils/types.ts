@@ -24,3 +24,16 @@ export interface APPOINTMENT_CARD_PROPS {
   heading: string;
   description: string;
 }
+
+export interface TESTIMONIAL_CARD_PROPS {
+  img: StaticImageData;
+  name: string;
+  designation: string;
+  description: string;
+}
+
+export interface COUNT_UP_CARD_PROPS {
+  number: number;
+  suffix: string;
+  title: string;
+}
