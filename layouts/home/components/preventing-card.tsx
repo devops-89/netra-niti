@@ -13,7 +13,7 @@ const Preventingcard = ({
     <Box
       sx={{
         backgroundImage: `url(${img.src})`,
-        height: "600px",
+        height: {lg:"600px",xs:"500px"},
         backgroundPosition: isExpanded ? "center" : "center",
         backgroundSize: isExpanded ? "cover" : "cover",
         borderRadius: "16px",

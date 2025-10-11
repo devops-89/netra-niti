@@ -31,17 +31,18 @@ const HomeTestimonial = () => {
     <Box
       sx={{
         backgroundImage: `url(${banner.src})`,
-        height: "100vh",
+        height: { lg: "100vh", xs: "100%" },
         backgroundPosition: "right",
         backgroundRepeat: "no-repeat",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        py: { lg: 0, xs: 3 },
       }}
     >
       <Container maxWidth="lg">
         <Grid container spacing={8}>
-          <Grid size={5}>
+          <Grid size={{ lg: 5, xs: 12 }}>
             <Typography
               sx={{
                 fontSize: 15,
@@ -53,10 +54,11 @@ const HomeTestimonial = () => {
             </Typography>
             <Typography
               sx={{
-                fontSize: 40,
+                fontSize: { lg: 40, xs: 25 },
                 fontWeight: 500,
                 fontFamily: poppins.style.fontFamily,
-                lineHeight: "74px",
+                lineHeight: { lg: "74px", xs: "25px" },
+                color: { lg: COLORS.BLACK, xs: COLORS.WHITE },
               }}
             >
               Real Stories, Real Impact: Hear from Our Satisfied Patients
@@ -64,15 +66,19 @@ const HomeTestimonial = () => {
 
             <Stack direction={"row"} alignItems={"center"} spacing={1}>
               <IconButton onClick={prevSlide}>
-                <ChevronLeft sx={{ color: COLORS.SECONDARY }} />
+                <ChevronLeft
+                  sx={{ color: { lg: COLORS.SECONDARY, xs: COLORS.WHITE } }}
+                />
               </IconButton>
               <IconButton onClick={nextSlide}>
-                <ChevronRight sx={{ color: COLORS.SECONDARY }} />
+                <ChevronRight
+                  sx={{ color: { lg: COLORS.SECONDARY, xs: COLORS.WHITE } }}
+                />
               </IconButton>
             </Stack>
           </Grid>
 
-          <Grid size={7}>
+          <Grid size={{ lg: 7, xs: 12 }}>
             <Swiper
               slidesPerView={"auto"}
               centeredSlides={true}

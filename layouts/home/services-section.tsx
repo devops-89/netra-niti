@@ -12,6 +12,7 @@ import {
   IconButton,
   Stack,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ServiceCard from "./components/service-card";
@@ -19,6 +20,7 @@ import netraBot from "@/homepage/about-us/netra-bot.png";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 const ServiceSection = () => {
+  const phone = useMediaQuery("(max-width:600px)");
   return (
     <Box>
       <Container maxWidth="lg">
@@ -34,21 +36,21 @@ const ServiceSection = () => {
           >
             <Box sx={{ py: 4 }}>
               <Grid container alignItems={"flex-end"} spacing={5}>
-                <Grid size={8}>
+                <Grid size={{ lg: 8, xs: 12 }}>
                   <Stack
-                    direction={"row"}
+                    direction={{ lg: "row", xs: "column" }}
                     alignItems={"flex-start"}
                     justifyContent="space-between"
                     spacing={3}
                   >
                     <Typography
                       sx={{
-                        fontSize: 50,
+                        fontSize: { lg: 50, xs: 30 },
                         color: COLORS.SECONDARY,
                         fontFamily: poppins.style.fontFamily,
                         fontWeight: 700,
                         textTransform: "capitalize",
-                        lineHeight: "76px",
+                        lineHeight: { lg: "76px", xs: "40px" },
                       }}
                     >
                       We always provide the best service
@@ -58,8 +60,8 @@ const ServiceSection = () => {
                         sx={{
                           backgroundColor: COLORS.SECONDARY,
                           color: COLORS.WHITE,
-                          width: 70,
-                          height: 70,
+                          width: { lg: 70, xs: 50 },
+                          height: { lg: 70, xs: 50 },
                           ":hover": {
                             color: COLORS.SECONDARY,
                             border: `1px solid ${COLORS.SECONDARY}`,
@@ -67,14 +69,14 @@ const ServiceSection = () => {
                           transition: "0.5s ease all",
                         }}
                       >
-                        <ArrowBack sx={{ fontSize: 30 }} />
+                        <ArrowBack sx={{ fontSize: { lg: 30, xs: 20 } }} />
                       </IconButton>
                       <IconButton
                         sx={{
                           backgroundColor: COLORS.SECONDARY,
                           color: COLORS.WHITE,
-                          width: 70,
-                          height: 70,
+                          width: { lg: 70, xs: 50 },
+                          height: { lg: 70, xs: 50 },
                           ":hover": {
                             color: COLORS.SECONDARY,
                             border: `1px solid ${COLORS.SECONDARY}`,
@@ -82,12 +84,23 @@ const ServiceSection = () => {
                           transition: "0.5s ease all",
                         }}
                       >
-                        <ArrowForward sx={{ fontSize: 30 }} />
+                        <ArrowForward sx={{ fontSize: { lg: 30, xs: 20 } }} />
                       </IconButton>
                     </Stack>
                   </Stack>
 
-                  <Swiper slidesPerView={2} spaceBetween={20}>
+                  <Swiper
+                    breakpoints={{
+                      600: {
+                        slidesPerView: 1,
+                        spaceBetween: 5,
+                      },
+                      1366: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                      },
+                    }}
+                  >
                     {services_data_section.map((val, i) => (
                       <SwiperSlide key={i}>
                         <ServiceCard
@@ -99,12 +112,21 @@ const ServiceSection = () => {
                     ))}
                   </Swiper>
                 </Grid>
-                <Grid size={4} sx={{ textAlign: "end", position: "relative" }}>
-                  <Box sx={{ width: 300, margin: "auto", textAlign: "start" }}>
+                <Grid
+                  size={{ lg: 4, xs: 12 }}
+                  sx={{ textAlign: "end", position: "relative" }}
+                >
+                  <Box
+                    sx={{
+                      width: { lg: 300, xs: "100%" },
+                      margin: "auto",
+                      textAlign: "start",
+                    }}
+                  >
                     <Box>
                       <Typography
                         sx={{
-                          fontSize: 50,
+                          fontSize: { lg: 50, xs: 30 },
                           fontFamily: fancake.style.fontFamily,
                           color: COLORS.PRIMARY,
                         }}
@@ -115,7 +137,7 @@ const ServiceSection = () => {
                         sequence={["I'm Netra", 1000, "How're you?", 1000]}
                         speed={50}
                         style={{
-                          fontSize: 50,
+                          fontSize: phone ? 30 : 50,
                           fontFamily: fancake.style.fontFamily,
                           color: COLORS.PRIMARY,
                         }}

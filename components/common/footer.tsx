@@ -9,14 +9,15 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
-    <Box sx={{ backgroundColor: COLORS.WHITE, pt: 20 }}>
+    <Box sx={{ backgroundColor: COLORS.WHITE, pt: { lg: 20, xs: 10 } }}>
       <Container>
         <Grid container>
-          <Grid size={10} margin="auto">
+          <Grid size={{ lg: 10, xs: 12 }} margin="auto">
             <Stack
               direction={"row"}
               alignItems={"center"}
@@ -24,16 +25,21 @@ const Footer = () => {
               justifyContent={"center"}
             >
               {FOOTER_LINKS.map((val, i) => (
-                <Typography
-                  key={i}
-                  sx={{
-                    fontSize: 18,
-                    color: COLORS.BLACK,
-                    fontFamily: poppins.style.fontFamily,
-                  }}
+                <Link
+                  href={val.url}
+                  style={{ textDecoration: "none", color: COLORS.BLACK }}
                 >
-                  {val.label}
-                </Typography>
+                  <Typography
+                    key={i}
+                    sx={{
+                      fontSize: { lg: 18, xs: 15 },
+                      color: COLORS.BLACK,
+                      fontFamily: poppins.style.fontFamily,
+                    }}
+                  >
+                    {val.label}
+                  </Typography>
+                </Link>
               ))}
             </Stack>
 
@@ -54,7 +60,7 @@ const Footer = () => {
             <Typography
               sx={{
                 textAlign: "center",
-                fontSize: 18,
+                fontSize: { lg: 18, xs: 16 },
                 fontWeight: 500,
                 fontFamily: poppins.style.fontFamily,
                 lineHeight: "25px",

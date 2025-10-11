@@ -11,10 +11,10 @@ const Approach = () => {
     <Box>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
-          <Grid size={7}>
+          <Grid size={{ lg: 7, xs: 12 }}>
             <Typography
               sx={{
-                fontSize: 45,
+                fontSize: { lg: 45, xs: 30 },
                 fontFamily: poppins.style.fontFamily,
                 fontWeight: 600,
                 color: COLORS.SECONDARY,
@@ -24,7 +24,7 @@ const Approach = () => {
               <Typography
                 component={"span"}
                 sx={{
-                  fontSize: 45,
+                  fontSize: { lg: 45, xs: 30 },
                   fontFamily: fancake.style.fontFamily,
                   color: COLORS.PRIMARY,
                 }}
@@ -34,7 +34,10 @@ const Approach = () => {
               </Typography>
             </Typography>
             <Typography
-              sx={{ fontSize: 20, fontFamily: poppins.style.fontFamily }}
+              sx={{
+                fontSize: { lg: 20, xs: 16 },
+                fontFamily: poppins.style.fontFamily,
+              }}
             >
               We believe in a cycle of care that doesn’t just stop at diagnosis
             </Typography>
@@ -42,7 +45,7 @@ const Approach = () => {
               <ApproachList data={APPROACH_LIST} />
             </Box>
           </Grid>
-          <Grid size={5}>
+          <Grid size={{ lg: 5, xs: 12 }}>
             <Image
               src={approach}
               alt=""

@@ -12,7 +12,7 @@ const CountUpCard = ({ number, suffix, title }: COUNT_UP_CARD_PROPS) => {
     <Box>
       <Typography
         sx={{
-          fontSize: 60,
+          fontSize: { lg: 60, xs: 30 },
           fontFamily: poppins.style.fontFamily,
           color: COLORS.WHITE,
           fontWeight: 700,
@@ -24,7 +24,7 @@ const CountUpCard = ({ number, suffix, title }: COUNT_UP_CARD_PROPS) => {
       </Typography>
       <Typography
         sx={{
-          fontSize: 18,
+          fontSize: { lg: 18, xs: 16 },
           fontFamily: poppins.style.fontFamily,
           color: COLORS.WHITE,
         }}

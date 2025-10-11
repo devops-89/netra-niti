@@ -1,8 +1,11 @@
 import {
   APPOINTMENT_CARD_PROPS,
+  CONTACT_CARD_PROPS,
   COUNT_UP_CARD_PROPS,
+  ICON_LIST_PROPS,
   LIST,
   PREVENTION_CARD_PROPS,
+  PROCESS_CARD_PROPS,
   SERVICE_CARD_PROPS,
   TESTIMONIAL_CARD_PROPS,
 } from "@/utils/types";
@@ -17,6 +20,19 @@ import appointment2 from "@/homepage/appointment/meet.png";
 import appointment3 from "@/homepage/appointment/clear-plan.png";
 import profile from "@/homepage/testimonial/avatar.jpg";
 import { YouTube, X, Facebook, Instagram, LinkedIn } from "@mui/icons-material";
+import process1 from "@/services/process-1.png";
+import process2 from "@/services/process-2.png";
+import process3 from "@/services/process-3.png";
+import process4 from "@/services/process-4.png";
+import arrowUp from "@/services/up-arrow.png";
+import arrowDown from "@/services/down-arrow.png";
+import service1 from "@/services/early-detection.png";
+import service2 from "@/services/personalized.svg";
+import service3 from "@/services/nationwide.svg";
+import service4 from "@/services/360.svg";
+import contact1 from "@/contact/phone.svg";
+import contact2 from "@/contact/email.svg";
+import contact3 from "@/contact/location.svg";
 export const navbar_links = [
   {
     label: "Home",
@@ -225,5 +241,122 @@ export const ABOUT_COUNTER_NUMBER: COUNT_UP_CARD_PROPS[] = [
     number: 30,
     suffix: "K+",
     title: "Total active Users",
+  },
+];
+
+export const PROCESS_CARD_DATA: PROCESS_CARD_PROPS[] = [
+  {
+    img: process1,
+    heading: "Early Detection",
+    description:
+      "Regular screenings in schools and clinics to catch vision problems before they progress",
+    arrowImg: arrowUp,
+  },
+  {
+    img: process2,
+    heading: "Risk Assessment",
+    description:
+      "Evaluating lifestyle, genetics, and eye health to understand each child’s risk level.",
+    arrowImg: arrowDown,
+  },
+  {
+    img: process3,
+    heading: "Personalized Treatment",
+    description:
+      "Tailor-made solutions using advanced lenses, atropine drops, or lifestyle programs.",
+    arrowImg: arrowUp,
+  },
+  {
+    img: process4,
+    heading: "Continuous Monitoring",
+    description:
+      "Ongoing check-ups, digital tracking, and updates to ensure lasting protection",
+  },
+];
+
+export const ICON_LIST_DATA: ICON_LIST_PROPS[] = [
+  {
+    label:
+      "Low-dose Atropine drops (0.01%) – proven to slow myopia progression by 60%.",
+  },
+  {
+    label: "Special spectacle lenses – designed to reduce eye elongation.",
+  },
+  {
+    label:
+      "Orthokeratology (night lenses) – reshapes the cornea temporarily to reduce progression.",
+  },
+  {
+    label:
+      "Lifestyle-based prescriptions – combining treatment with daily habits.",
+  },
+];
+
+export const SCHOOL_VISION_LIST_DATA: ICON_LIST_PROPS[] = [
+  {
+    label: "Free/affordable screenings conducted in schools every 6 months.",
+  },
+  {
+    label: "Detects myopia early often 2 years before routine check-ups.",
+  },
+  {
+    label: "Teachers trained to spot early warning signs.",
+  },
+  {
+    label: "Awareness seminars for parents during school events",
+  },
+];
+
+export const WHY_SERVICES = [
+  {
+    img: service1,
+    label: "Early detection compared to regular clinics.",
+  },
+  {
+    img: service2,
+    label: "Personalized, research-backed treatment plans.",
+  },
+  {
+    img: service3,
+    label: "Nationwide school and community outreach.",
+  },
+  {
+    img: service4,
+    label: "A 360° support system for both children and parents.",
+  },
+];
+
+export const PARENT_EDUCATION_PROGRAM: ICON_LIST_PROPS[] = [
+  {
+    label:
+      "Interactive sessions that teach parents practical ways to reduce screen time impact, encourage outdoor play, and build healthy vision habits at home.",
+  },
+  {
+    label:
+      "Easy-to-follow handbooks and tips on posture, study lighting, and safe reading distance to protect young eyes.",
+  },
+  {
+    label: "Teachers trained to spot early warning signs.",
+  },
+  {
+    label: "Awareness seminars for parents during school events",
+  },
+];
+
+export const CONTACT_CARD_DATA: CONTACT_CARD_PROPS[] = [
+  {
+    img: contact1,
+    title: "Call",
+    description: "Phone number",
+  },
+  {
+    img: contact2,
+    title: "Email",
+    description: "info@netraniti.com",
+  },
+  {
+    img: contact3,
+    title: "Location",
+    description: "New Delhi",
   },
 ];

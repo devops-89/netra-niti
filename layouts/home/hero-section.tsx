@@ -10,6 +10,7 @@ import eye from "@/homepage/banner_eye.png";
 import Image from "next/image";
 import ButtonWithIcon from "@/components/widgets/button-with-icon";
 import { CalendarMonth } from "@mui/icons-material";
+import Link from "next/link";
 const rotateInfinite = keyframes`
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -21,23 +22,24 @@ const HeroSection = () => {
         <Box
           sx={{
             backgroundImage: `url(${line.src})`,
-            height: "105vh",
+            height: { lg: "105vh", xs: "100%" },
             backgroundSize: "contain",
             backgroundPosition: "right center",
             backgroundRepeat: "no-repeat",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            py: { xs: 10 },
           }}
         >
           <Container>
-            <Grid container alignItems={"center"}>
-              <Grid size={6}>
+            <Grid container alignItems={"center"} spacing={5}>
+              <Grid size={{ lg: 6, xs: 12 }}>
                 <Typography
                   sx={{
                     fontFamily: poppins.style.fontFamily,
                     color: COLORS.WHITE,
-                    fontSize: 60,
+                    fontSize: { lg: 60, xs: 35 },
                     letterSpacing: "-2.73px",
                     filter: "blur(2px)",
                   }}
@@ -48,14 +50,14 @@ const HeroSection = () => {
                   sx={{
                     fontFamily: fancake.style.fontFamily,
                     color: COLORS.PRIMARY,
-                    fontSize: 60,
+                    fontSize: { lg: 60, xs: 35 },
                   }}
                 >
                   clear vision.
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: 25,
+                    fontSize: { lg: 25, xs: 16 },
                     fontFamily: poppins.style.fontFamily,
                     color: COLORS.WHITE,
                   }}
@@ -63,25 +65,26 @@ const HeroSection = () => {
                   Personalized eye care and the latest in fashionable eyewear,
                   all under one roof.
                 </Typography>
-
-                <ButtonWithIcon
-                  label="Book an eye exam"
-                  sx={{
-                    mt: 3,
-                    backgroundColor: COLORS.WHITE,
-                    color: COLORS.PRIMARY,
-                    fontWeight: 600,
-                    border: "none",
-                  }}
-                  iconBgColor={COLORS.PRIMARY}
-                  icon={<CalendarMonth sx={{ color: COLORS.WHITE }} />}
-                />
+                <Link href="/contact-us">
+                  <ButtonWithIcon
+                    label="Book an eye exam"
+                    sx={{
+                      mt: 3,
+                      backgroundColor: COLORS.WHITE,
+                      color: COLORS.PRIMARY,
+                      fontWeight: 600,
+                      border: "none",
+                    }}
+                    iconBgColor={COLORS.PRIMARY}
+                    icon={<CalendarMonth sx={{ color: COLORS.WHITE }} />}
+                  />
+                </Link>
               </Grid>
-              <Grid size={6} sx={{ textAlign: "center" }}>
+              <Grid size={{ lg: 6, xs: 12 }} sx={{ textAlign: "center" }}>
                 <Box
                   sx={{
-                    width: 450,
-                    height: 450,
+                    width: { lg: 450, xs: 300 },
+                    height: { lg: 450, xs: 300 },
                     animation: `${rotateInfinite} 60s linear infinite`,
                     transformOrigin: "50% 50%",
                     display: "inline-block",

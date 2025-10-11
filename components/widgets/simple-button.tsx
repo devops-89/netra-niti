@@ -24,7 +24,7 @@ const SimpleButton = ({
         fontWeight: 700,
         textTransform: "initial",
         padding: "12px 24px",
-        fontSize: 16,
+        fontSize: { lg: 16, xs: 12},
         overflow: "hidden",
         transition: "all 0.3s ease",
 

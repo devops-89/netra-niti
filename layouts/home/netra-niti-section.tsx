@@ -1,4 +1,5 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+"use client";
+import { Box, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import bot from "@/homepage/about-us/netra-bot-2.png";
 import Image from "next/image";
@@ -6,19 +7,29 @@ import { COLORS } from "@/utils/enum";
 import { fancake, poppins } from "@/utils/fonts";
 import ButtonWithIcon from "@/components/widgets/button-with-icon";
 import { CalendarMonth } from "@mui/icons-material";
+import Link from "next/link";
 const NetraNitiSection = () => {
+  const phone = useMediaQuery("(max-width:600px)");
   return (
     <Box sx={{ pt: 0 }}>
       <Container>
-        <Grid container alignItems={"center"}>
-          <Grid size={6}>
+        <Grid
+          container
+          alignItems={"center"}
+          direction={{ xs: "column-reverse", lg: "row" }}
+        >
+          <Grid size={{ lg: 6, xs: 12 }}>
             <Image
               src={bot}
               alt=""
-              style={{ rotate: " 20deg", width: "500px", height: "500px" }}
+              style={{
+                rotate: " 20deg",
+                width: phone ? "100%" : "500px",
+                height: phone ? "100%" : "500px",
+              }}
             />
           </Grid>
-          <Grid size={6}>
+          <Grid size={{ lg: 6, xs: 12 }}>
             <Typography
               sx={{
                 color: COLORS.PRIMARY,
@@ -34,11 +45,11 @@ const NetraNitiSection = () => {
             <Typography
               sx={{
                 fontFamily: poppins.style.fontFamily,
-                fontSize: 45,
+                fontSize: { lg: 45, xs: 25 },
                 color: COLORS.SECONDARY,
                 textTransform: "capitalize",
                 fontWeight: 700,
-                lineHeight: "69px",
+                lineHeight: { lg: "69px", xs: "30px" },
               }}
             >
               A Silent Epidemic Threatening{" "}
@@ -46,11 +57,11 @@ const NetraNitiSection = () => {
                 component={"span"}
                 sx={{
                   fontFamily: fancake.style.fontFamily,
-                  fontSize: 45,
+                  fontSize: { lg: 45, xs: 25 },
                   color: COLORS.PRIMARY,
                   textTransform: "capitalize",
                   fontWeight: 400,
-                  lineHeight: "69px",
+                  lineHeight: { lg: "69px", xs: "30px" },
                 }}
               >
                 Young Eyes
@@ -58,9 +69,10 @@ const NetraNitiSection = () => {
             </Typography>
             <Typography
               sx={{
-                fontSize: 18,
+                fontSize: { lg: 18, xs: 16 },
                 fontFamily: poppins.style.fontFamily,
                 color: COLORS.TEXT_TERNARY_COLOR,
+                mt: { lg: 0, xs: 2 },
               }}
             >
               By 2050, nearly half of all Indian children may suffer from
@@ -69,19 +81,20 @@ const NetraNitiSection = () => {
               detection and evidence-based care, we can slow or even stop its
               progression.
             </Typography>
-
-            <ButtonWithIcon
-              label="Book an eye exam"
-              sx={{
-                mt: 3,
-                backgroundColor: COLORS.PRIMARY_BUTTON,
-                color: COLORS.WHITE,
-                fontWeight: 600,
-                border: "none",
-              }}
-              iconBgColor={COLORS.WHITE}
-              icon={<CalendarMonth sx={{ color: COLORS.PRIMARY }} />}
-            />
+            <Link href="/contact-us">
+              <ButtonWithIcon
+                label="Book an eye exam"
+                sx={{
+                  mt: 3,
+                  backgroundColor: COLORS.PRIMARY_BUTTON,
+                  color: COLORS.WHITE,
+                  fontWeight: 600,
+                  border: "none",
+                }}
+                iconBgColor={COLORS.WHITE}
+                icon={<CalendarMonth sx={{ color: COLORS.PRIMARY }} />}
+              />
+            </Link>
           </Grid>
         </Grid>
       </Container>

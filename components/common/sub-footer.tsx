@@ -3,6 +3,7 @@ import { COLORS } from "@/utils/enum";
 import { fancake, poppins } from "@/utils/fonts";
 import { CalendarMonth } from "@mui/icons-material";
 import { Box, Container, Grid, Typography } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 const SubFooter = () => {
@@ -10,14 +11,14 @@ const SubFooter = () => {
     <Box>
       <Container>
         <Grid container>
-          <Grid size={10} margin="auto">
+          <Grid size={{ lg: 10, xs: 12 }} margin="auto">
             <Typography
               sx={{
-                fontSize: 50,
+                fontSize: { lg: 50, xs: 30 },
                 fontFamily: poppins.style.fontFamily,
                 textAlign: "center",
                 fontWeight: 900,
-                lineHeight: "72px",
+                lineHeight: { lg: "72px", xs: "30px" },
                 color: COLORS.SECONDARY,
               }}
             >
@@ -25,11 +26,11 @@ const SubFooter = () => {
             </Typography>
             <Typography
               sx={{
-                fontSize: 50,
+                fontSize: { lg: 50, xs: 30 },
                 fontFamily: fancake.style.fontFamily,
                 textAlign: "center",
                 fontWeight: 900,
-                lineHeight: "72px",
+                lineHeight: { lg: "72px", xs: "30px" },
                 color: COLORS.PRIMARY,
               }}
             >
@@ -49,11 +50,13 @@ const SubFooter = () => {
               personalized eye care!{" "}
             </Typography>
             <Box sx={{ textAlign: "center" }}>
-              <ButtonWithIcon
-                icon={<CalendarMonth />}
-                label="Schedule Your Appointment"
-                sx={{ backgroundColor: COLORS.PRIMARY, color: COLORS.WHITE }}
-              />
+              <Link href="/contact-us">
+                <ButtonWithIcon
+                  icon={<CalendarMonth />}
+                  label="Schedule Your Appointment"
+                  sx={{ backgroundColor: COLORS.PRIMARY, color: COLORS.WHITE }}
+                />
+              </Link>
             </Box>
           </Grid>
         </Grid>

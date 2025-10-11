@@ -5,16 +5,20 @@ import React from "react";
 import AppointmentCard from "./components/appointment-card";
 import { APPOINTMENT_CARD_DATA } from "@/assets/generic-data";
 import SimpleButton from "@/components/widgets/simple-button";
+import Link from "next/link";
 
 const SupporativeCare = () => {
   return (
     <Box sx={{ pt: 10 }}>
       <Container maxWidth="lg">
         <Grid container>
-          <Grid size={8} sx={{ margin: "auto", textAlign: "center" }}>
+          <Grid
+            size={{ lg: 8, xs: 12 }}
+            sx={{ margin: "auto", textAlign: "center" }}
+          >
             <Typography
               sx={{
-                fontSize: 60,
+                fontSize: { lg: 60, xs: 35 },
                 fontFamily: poppins.style.fontFamily,
                 textAlign: "center",
                 letterSpacing: "-0.916px",
@@ -26,7 +30,7 @@ const SupporativeCare = () => {
             </Typography>
             <Typography
               sx={{
-                fontSize: 20,
+                fontSize: { lg: 20, xs: 16 },
                 fontFamily: poppins.style.fontFamily,
                 textAlign: "center",
                 // letterSpacing: "-0.916px",
@@ -40,13 +44,15 @@ const SupporativeCare = () => {
               designed to support your health at every stage of life. Whether
               you're here for a routine.
             </Typography>
-            <SimpleButton label="Book An Appointment" sx={{ mt: 3}} />
+            <Link href="/contact-us">
+              <SimpleButton label="Book An Appointment" sx={{ mt: 3 }} />
+            </Link>
           </Grid>
         </Grid>
 
         <Grid container spacing={3} sx={{ mt: 7 }}>
           {APPOINTMENT_CARD_DATA.map((val, i) => (
-            <Grid size={4}>
+            <Grid size={{ lg: 4, xs: 12 }} key={i}>
               <AppointmentCard
                 img={val.img}
                 heading={val.heading}

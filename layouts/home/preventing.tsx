@@ -18,10 +18,10 @@ const Preventing = () => {
           sx={{
             textAlign: "center",
             color: COLORS.SECONDARY,
-            fontSize: 50,
+            fontSize: { lg: 50, xs: 30 },
             fontWeight: 400,
             fontFamily: fancake.style.fontFamily,
-            lineHeight: "56px",
+            lineHeight: { lg: "56px", xs: "30px" },
           }}
         >
           Preventing Childhood Myopia
@@ -30,10 +30,11 @@ const Preventing = () => {
           sx={{
             textAlign: "center",
             color: COLORS.TEXT_TERNARY_COLOR,
-            fontSize: 25,
+            fontSize: { lg: 25, xs: 20 },
             fontWeight: 400,
             fontFamily: poppins.style.fontFamily,
-            lineHeight: "56px",
+            lineHeight: { lg: "56px", xs: "30px" },
+            mt: { xs: 2, lg: 0 },
           }}
         >
           Small steps today can protect your child’s vision for a lifetime
@@ -45,6 +46,7 @@ const Preventing = () => {
             gap: 3,
             overflow: "hidden",
             mt: 2,
+            flexDirection: { lg: "row", xs: "column" },
           }}
         >
           {PREVENTION_CARD_DATA.map((val, i) => (
