@@ -2,7 +2,7 @@
 
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { keyframes } from "@mui/system";
-import React from "react";
+import React, { useEffect } from "react";
 import line from "@/homepage/line_hero.png";
 import { fancake, poppins } from "@/utils/fonts";
 import { COLORS } from "@/utils/enum";
@@ -11,18 +11,22 @@ import Image from "next/image";
 import ButtonWithIcon from "@/components/widgets/button-with-icon";
 import { CalendarMonth } from "@mui/icons-material";
 import Link from "next/link";
+import Aos from "aos";
 const rotateInfinite = keyframes`
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 `;
 const HeroSection = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <Box>
       <Container maxWidth="lg">
         <Box
           sx={{
             backgroundImage: `url(${line.src})`,
-            height: { lg: "105vh", xs: "100%" },
+            height: { lg: "100%", xs: "100%" },
             backgroundSize: "contain",
             backgroundPosition: "right center",
             backgroundRepeat: "no-repeat",
@@ -34,7 +38,10 @@ const HeroSection = () => {
         >
           <Container>
             <Grid container alignItems={"center"} spacing={5}>
-              <Grid size={{ lg: 6, xs: 12 }}>
+              <Grid
+                size={{ lg: 6, xs: 12 }}
+                className="animate__animated animate__backInLeft"
+              >
                 <Typography
                   sx={{
                     fontFamily: poppins.style.fontFamily,
@@ -80,7 +87,11 @@ const HeroSection = () => {
                   />
                 </Link>
               </Grid>
-              <Grid size={{ lg: 6, xs: 12 }} sx={{ textAlign: "center" }}>
+              <Grid
+                size={{ lg: 6, xs: 12 }}
+                sx={{ textAlign: "center" }}
+                className="animate__animated animate__backInRight"
+              >
                 <Box
                   sx={{
                     width: { lg: 450, xs: 300 },

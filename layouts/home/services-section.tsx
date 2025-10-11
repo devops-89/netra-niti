@@ -19,8 +19,14 @@ import ServiceCard from "./components/service-card";
 import netraBot from "@/homepage/about-us/netra-bot.png";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { useEffect } from "react";
+import Aos from "aos";
 const ServiceSection = () => {
   const phone = useMediaQuery("(max-width:600px)");
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <Box>
       <Container maxWidth="lg">
@@ -36,7 +42,7 @@ const ServiceSection = () => {
           >
             <Box sx={{ py: 4 }}>
               <Grid container alignItems={"flex-end"} spacing={5}>
-                <Grid size={{ lg: 8, xs: 12 }}>
+                <Grid size={{ lg: 8, xs: 12 }} data-aos="fade-up">
                   <Stack
                     direction={{ lg: "row", xs: "column" }}
                     alignItems={"flex-start"}
@@ -151,6 +157,7 @@ const ServiceSection = () => {
                       alt=""
                       width={200}
                       style={{ rotate: "-20deg", marginTop: 20 }}
+                      className="animate__animated animate__shakeY animate__infinite	infinite animate__slow	5s"
                     />
                   </Box>
                 </Grid>

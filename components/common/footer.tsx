@@ -28,6 +28,7 @@ const Footer = () => {
                 <Link
                   href={val.url}
                   style={{ textDecoration: "none", color: COLORS.BLACK }}
+                  key={i}
                 >
                   <Typography
                     key={i}

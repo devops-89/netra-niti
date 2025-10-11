@@ -1,12 +1,13 @@
+import Footer from "@/components/common/footer";
 import Navbar from "@/components/common/navbar";
+import SubFooter from "@/components/common/sub-footer";
+import { COLORS } from "@/utils/enum";
+import { Box, Container } from "@mui/material";
 import "animate.css";
 import type { Metadata } from "next";
-import "./globals.css";
 import "swiper/css";
-import SubFooter from "@/components/common/sub-footer";
-import Footer from "@/components/common/footer";
-import { Box, Container } from "@mui/material";
-import { COLORS } from "@/utils/enum";
+import "./globals.css";
+import "aos/dist/aos.css";
 export const metadata: Metadata = {
   title: "Netra Niti",
   description: "Netra Niti",
