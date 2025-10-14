@@ -21,9 +21,102 @@ const HeroSection = () => {
     Aos.init();
   }, []);
   return (
-    <Box>
-      <Container maxWidth="lg">
+    <Container maxWidth="lg">
+      <Box sx={{ height: "120vh", position: "relative" }}>
         <Box
+          sx={{
+            height: "100vh",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Image
+            src={line}
+            alt=""
+            style={{
+              width: "100%",
+              objectFit: "contain",
+              position: "absolute",
+              top: -20,
+              height: "120vh",
+            }}
+          />
+          <Grid container alignItems={"center"} spacing={5}>
+            <Grid
+              size={{ lg: 6, xs: 12 }}
+              className="animate__animated animate__backInLeft"
+            >
+              <Typography
+                sx={{
+                  fontFamily: poppins.style.fontFamily,
+                  color: COLORS.WHITE,
+                  fontSize: { lg: 60, xs: 35 },
+                  letterSpacing: "-2.73px",
+                  filter: "blur(2px)",
+                }}
+              >
+                Focus on what matters with
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: fancake.style.fontFamily,
+                  color: COLORS.PRIMARY,
+                  fontSize: { lg: 60, xs: 35 },
+                }}
+              >
+                clear vision.
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: { lg: 25, xs: 16 },
+                  fontFamily: poppins.style.fontFamily,
+                  color: COLORS.WHITE,
+                }}
+              >
+                Personalized eye care and the latest in fashionable eyewear, all
+                under one roof.
+              </Typography>
+              <Link href="/contact-us">
+                <ButtonWithIcon
+                  label="Book an eye exam"
+                  sx={{
+                    mt: 3,
+                    backgroundColor: COLORS.WHITE,
+                    color: COLORS.PRIMARY,
+                    fontWeight: 600,
+                    border: "none",
+                  }}
+                  iconBgColor={COLORS.PRIMARY}
+                  icon={<CalendarMonth sx={{ color: COLORS.WHITE }} />}
+                />
+              </Link>
+            </Grid>
+            <Grid
+              size={{ lg: 6, xs: 12 }}
+              sx={{ textAlign: "center" }}
+              className="animate__animated animate__backInRight"
+            >
+              <Box
+                sx={{
+                  width: { lg: 450, xs: 300 },
+                  height: { lg: 450, xs: 300 },
+                  animation: `${rotateInfinite} 60s linear infinite`,
+                  transformOrigin: "50% 50%",
+                  display: "inline-block",
+                  margin: "auto",
+                }}
+              >
+                <Image
+                  src={eye}
+                  alt=""
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
+        {/* <Box
           sx={{
             backgroundImage: `url(${line.src})`,
             height: { lg: "100%", xs: "100%" },
@@ -33,10 +126,17 @@ const HeroSection = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            py: { xs: 10 },
+            py: { xs: 10, lg: 0 },
           }}
         >
-          <Container>
+          <Container
+            sx={{
+              height: "100vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <Grid container alignItems={"center"} spacing={5}>
               <Grid
                 size={{ lg: 6, xs: 12 }}
@@ -111,9 +211,9 @@ const HeroSection = () => {
               </Grid>
             </Grid>
           </Container>
-        </Box>
-      </Container>
-    </Box>
+        </Box> */}
+      </Box>
+    </Container>
   );
 };
 

@@ -44,7 +44,7 @@ const ButtonWithIcon = ({
         borderRadius: "10rem",
         border: "2px solid #ffddd5",
         padding: " 5px 15px 5px 5px",
-        fontWeight: 700,
+        fontWeight: 500,
         fontSize: { lg: 18, xs: 12 },
         fontFamily: poppins.style.fontFamily,
         transition: "all 0.3s ease",

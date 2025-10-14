@@ -21,7 +21,7 @@ const SimpleButton = ({
         color: COLORS.WHITE,
         fontFamily: poppins.style.fontFamily,
         border: "2px solid #ffddd5",
-        fontWeight: 700,
+        fontWeight: 500,
         textTransform: "initial",
         padding: "12px 24px",
         fontSize: { lg: 16, xs: 12},

@@ -44,7 +44,7 @@ const Navbar = () => {
             justifyContent={"space-between"}
             sx={{
               backgroundColor: bgColor,
-              height: "65px",
+              height: "60px",
               borderRadius: "10rem",
               px: 2,
               backdropFilter: "blur(10px)",
@@ -72,7 +72,7 @@ const Navbar = () => {
               ))}
             </Stack>
             <Link href="/">
-              <Image src={logo} alt="" width={180} />
+              <Image src={logo} alt="" width={150} />
             </Link>
             <Link href="/contact-us">
               <ButtonWithIcon
@@ -86,6 +86,7 @@ const Navbar = () => {
             </Link>
           </Stack>
         </Box>
+        {/* mobile Header */}
         <Box sx={{ display: { lg: "none", xs: "block" } }}>
           <Stack
             direction={"row"}
