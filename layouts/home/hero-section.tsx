@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { keyframes } from "@mui/system";
+import { keyframes, useMediaQuery } from "@mui/system";
 import React, { useEffect } from "react";
 import line from "@/homepage/line_hero.png";
 import { fancake, poppins } from "@/utils/fonts";
@@ -17,15 +17,26 @@ const rotateInfinite = keyframes`
   100% { transform: rotate(360deg); }
 `;
 const HeroSection = () => {
+  const phone = useMediaQuery("(max-width:600px)");
+
   useEffect(() => {
     Aos.init();
   }, []);
   return (
     <Container maxWidth="lg">
-      <Box sx={{ height: "120vh", position: "relative" }}>
+      <Box
+        sx={{
+          height: { lg: "115vh", xs: "100%" },
+          position: "relative",
+          backgroundAttachment: "fixed",
+          // display: "flex",
+          // alignItems: "center",
+          // justifyContent: "center",
+        }}
+      >
         <Box
           sx={{
-            height: "100vh",
+            height: { lg: "100vh", xs: "100%" },
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -38,8 +49,8 @@ const HeroSection = () => {
               width: "100%",
               objectFit: "contain",
               position: "absolute",
-              top: -20,
-              height: "120vh",
+              top: -180,
+              // height: phone ? "100%" : "200vh",
             }}
           />
           <Grid container alignItems={"center"} spacing={5}>

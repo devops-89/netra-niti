@@ -24,7 +24,14 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Container maxWidth="xl">
-          <Box sx={{ backgroundColor: COLORS.WHITE, pt: 15 }}>
+          <Box
+            sx={{
+              backgroundColor: COLORS.WHITE,
+              pt: 15,
+              borderBottomLeftRadius: "30px",
+              borderBottomRightRadius: "30px",
+            }}
+          >
             <SubFooter />
             <Footer />
           </Box>
