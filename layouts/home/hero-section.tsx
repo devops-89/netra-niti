@@ -42,7 +42,7 @@ const HeroSection = () => {
             justifyContent: "center",
           }}
         >
-          <Image
+          {/* <Image
             src={line}
             alt=""
             style={{
@@ -52,7 +52,7 @@ const HeroSection = () => {
               top: -180,
               // height: phone ? "100%" : "200vh",
             }}
-          />
+          /> */}
           <Grid container alignItems={"center"} spacing={5}>
             <Grid
               size={{ lg: 6, xs: 12 }}
