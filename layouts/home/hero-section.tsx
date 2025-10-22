@@ -29,9 +29,6 @@ const HeroSection = () => {
           height: { lg: "115vh", xs: "100%" },
           position: "relative",
           backgroundAttachment: "fixed",
-          // display: "flex",
-          // alignItems: "center",
-          // justifyContent: "center",
         }}
       >
         <Box
