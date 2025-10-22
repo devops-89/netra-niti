@@ -46,12 +46,13 @@ const Navbar = () => {
               backgroundColor: bgColor,
               height: "60px",
               borderRadius: "10rem",
-              px: 2,
+              px: 1,
               backdropFilter: "blur(10px)",
               transition: "background-color 0.25s ease",
+              border: "3.5px solid #ffffff",
             }}
           >
-            <Stack direction={"row"} alignItems={"center"} spacing={5}>
+            <Stack direction={"row"} alignItems={"center"} spacing={5} px={2}>
               {navbar_links.map((val, i) => (
                 <Link
                   href={val.url}
