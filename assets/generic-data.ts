@@ -211,18 +211,23 @@ export const FOOTER_LINKS = [
 export const FOOTER_SOCIAL_ICONS = [
   {
     icon: YouTube,
+    url: "https://www.youtube.com/@NxtGenNetraNiti",
   },
   {
     icon: Facebook,
+    url: "https://www.facebook.com/NxtGenNetraNiti/",
   },
   {
     icon: X,
+    url: "https://x.com/NxtGenNetraNiti",
   },
   {
     icon: Instagram,
+    url: "https://www.instagram.com/nxtgennetraniti/",
   },
   {
     icon: LinkedIn,
+    url: "https://www.linkedin.com/company/nxtgen-netra-niti/",
   },
 ];
 
@@ -360,3 +365,6 @@ export const CONTACT_CARD_DATA: CONTACT_CARD_PROPS[] = [
     description: "New Delhi",
   },
 ];
+
+
+
