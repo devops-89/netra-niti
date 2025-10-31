@@ -52,6 +52,9 @@ const Navbar = () => {
               border: "3.5px solid #ffffff",
             }}
           >
+            <Link href="/">
+              <Image src={logo} alt="" width={150} style={{ marginLeft: "5px" }} />
+            </Link>
             <Stack direction={"row"} alignItems={"center"} spacing={5} px={2}>
               {navbar_links.map((val, i) => (
                 <Link
@@ -71,20 +74,18 @@ const Navbar = () => {
                   </Typography>
                 </Link>
               ))}
+
+              <Link href="/contact-us">
+                <ButtonWithIcon
+                  label="Contact us"
+                  sx={{
+                    backgroundColor: COLORS.PRIMARY_BUTTON,
+                    color: COLORS.WHITE,
+                    fontSize: 16,
+                  }}
+                />
+              </Link>
             </Stack>
-            <Link href="/">
-              <Image src={logo} alt="" width={150} />
-            </Link>
-            <Link href="/contact-us">
-              <ButtonWithIcon
-                label="Contact us"
-                sx={{
-                  backgroundColor: COLORS.PRIMARY_BUTTON,
-                  color: COLORS.WHITE,
-                  fontSize: 16,
-                }}
-              />
-            </Link>
           </Stack>
         </Box>
         {/* mobile Header */}

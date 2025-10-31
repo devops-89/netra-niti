@@ -15,9 +15,9 @@ import prevention1 from "@/homepage/preventing/2hours.jpg";
 import prevention2 from "@/homepage/preventing/linits-screen.jpg";
 import prevention3 from "@/homepage/preventing/safe-reading.jpg";
 import prevention4 from "@/homepage/preventing/regular-eye.jpg";
-import appointment1 from "@/homepage/appointment/schedule.png";
-import appointment2 from "@/homepage/appointment/meet.png";
-import appointment3 from "@/homepage/appointment/clear-plan.png";
+import appointment1 from "@/homepage/appointment/schedule.jpg";
+import appointment2 from "@/homepage/appointment/meet.jpg";
+import appointment3 from "@/homepage/appointment/clear-plan.jpg";
 import profile from "@/homepage/testimonial/avatar.jpg";
 import { YouTube, X, Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 import process1 from "@/services/process-1.png";
@@ -128,7 +128,7 @@ export const APPOINTMENT_CARD_DATA: APPOINTMENT_CARD_PROPS[] = [
   },
   {
     img: appointment2,
-    heading: "Meet Your Doctor",
+    heading: "Meet Your Optometerists",
     description:
       "During your appointment, we’ll take the time to listen, ask the right questions, and examine your concerns with care.",
   },
@@ -365,6 +365,3 @@ export const CONTACT_CARD_DATA: CONTACT_CARD_PROPS[] = [
     description: "New Delhi",
   },
 ];
-
-
-
