@@ -14,7 +14,7 @@ const TeamsAbout = () => {
           <Grid size={{ lg: 6, xs: 12 }}>
             <DescriptionBox
               heading="Our Team of Experts"
-              description="Our team of ophthalmologists brings together expertise in
+              description="Our team of optometerists brings together expertise in
               comprehensive eye care from regular check-ups and diagnosis to
               advanced treatments and surgeries. With a patient first approach,
               we ensure every individual receives personalized care to protect

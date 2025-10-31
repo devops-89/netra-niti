@@ -46,10 +46,10 @@ export const navbar_links = [
     label: "Services",
     url: "/services",
   },
-  {
-    label: "Blog",
-    url: "/blog",
-  },
+  // {
+  //   label: "Blog",
+  //   url: "/blog",
+  // },
 ];
 
 export const services_data_section: SERVICE_CARD_PROPS[] = [
@@ -194,10 +194,10 @@ export const FOOTER_LINKS = [
     label: "Services",
     url: "/services",
   },
-  {
-    label: "Blog",
-    url: "/blog",
-  },
+  // {
+  //   label: "Blog",
+  //   url: "/blog",
+  // },
   {
     label: "Contact Us",
     url: "/contact-us",
