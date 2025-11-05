@@ -33,6 +33,7 @@ const HeroSection = () => {
           height: { lg: "115vh", xs: "100%" },
           position: "relative",
           overflow: "hidden",
+          py: { xs: 10, lg: 0 },
         }}
       >
         {/* Responsive Dashed Line */}
@@ -182,7 +183,10 @@ const HeroSection = () => {
                   objectFit: "cover",
                 }}
               >
-                <source src="/images/homepage/netra_niti_01.mp4" type="video/mp4" />
+                <source
+                  src="/images/homepage/netra_niti_01.mp4"
+                  type="video/mp4"
+                />
                 Your browser does not support the video tag.
               </video>
             </Grid>
