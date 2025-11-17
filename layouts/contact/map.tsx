@@ -49,7 +49,7 @@ const FormMap = () => {
                         height: "100px !important",
                       },
                     }}
-                    label="Email Address"
+                    label="Message"
                     fullWidth
                     multiline
                   />
