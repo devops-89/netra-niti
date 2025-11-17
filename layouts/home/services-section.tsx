@@ -40,7 +40,7 @@ const ServiceSection = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <Box sx={{ py: 4 }}>
+            <Box sx={{ py: 8 }}>
               <Grid container alignItems={"flex-end"} spacing={5}>
                 <Grid size={{ lg: 8, xs: 12 }} data-aos="fade-up">
                   <Stack

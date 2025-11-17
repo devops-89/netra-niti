@@ -44,7 +44,7 @@ const ServiceCard = ({ img, heading, description }: SERVICE_CARD_PROPS) => {
       >
         {description}
       </Typography>
-      <Link href={"/contact-us"}>
+      {/* <Link href={"/contact-us"}>
         <ButtonWithIcon
           label="Book Now"
           iconPosition="right"
@@ -54,7 +54,7 @@ const ServiceCard = ({ img, heading, description }: SERVICE_CARD_PROPS) => {
             mt: 2,
           }}
         />
-      </Link>
+      </Link> */}
     </Box>
   );
 };

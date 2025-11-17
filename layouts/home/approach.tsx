@@ -4,7 +4,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import ApproachList from "./components/approach-list";
 import { APPROACH_LIST } from "@/assets/generic-data";
-import approach from "@/homepage/approach.jpg";
+import approach from "@/homepage/little-girl.jpg";
 import Image from "next/image";
 const Approach = () => {
   return (
@@ -49,7 +49,12 @@ const Approach = () => {
             <Image
               src={approach}
               alt=""
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: 30,
+              }}
             />
           </Grid>
         </Grid>

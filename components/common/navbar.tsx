@@ -46,14 +46,14 @@ const Navbar = () => {
               backgroundColor: bgColor,
               height: "60px",
               borderRadius: "10rem",
-              px: 1,
+              // px: 1,
               backdropFilter: "blur(10px)",
               transition: "background-color 0.25s ease",
               border: "3.5px solid #ffffff",
             }}
           >
             <Link href="/">
-              <Image src={logo} alt="" width={150} style={{ marginLeft: "5px" }} />
+              <Image src={logo} alt="" width={150} style={{ marginLeft: "25px" }} />
             </Link>
             <Stack direction={"row"} alignItems={"center"} spacing={5} px={2}>
               {navbar_links.map((val, i) => (

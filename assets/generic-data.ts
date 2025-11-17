@@ -11,10 +11,10 @@ import {
 } from "@/utils/types";
 import serviceImage1 from "@/homepage/about-us/image1.jpg";
 import serviceImage2 from "@/homepage/about-us/vision-2.jpg";
-import prevention1 from "@/homepage/preventing/2hours.jpg";
-import prevention2 from "@/homepage/preventing/linits-screen.jpg";
-import prevention3 from "@/homepage/preventing/safe-reading.jpg";
-import prevention4 from "@/homepage/preventing/regular-eye.jpg";
+import prevention1 from "@/homepage/preventing/hours-daily.jpg";
+import prevention2 from "@/homepage/preventing/limit-screen-time.jpg";
+import prevention3 from "@/homepage/preventing/self-reading.jpg";
+import prevention4 from "@/homepage/preventing/eye-checkup.jpg";
 import appointment1 from "@/homepage/appointment/schedule.jpg";
 import appointment2 from "@/homepage/appointment/meet.jpg";
 import appointment3 from "@/homepage/appointment/clear-plan.jpg";
