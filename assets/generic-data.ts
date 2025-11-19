@@ -57,13 +57,13 @@ export const services_data_section: SERVICE_CARD_PROPS[] = [
     img: serviceImage1,
     heading: "School Vision Screenings",
     description:
-      "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:",
+      "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services",
   },
   {
     img: serviceImage2,
     heading: "Advanced Myopia Treatments",
     description:
-      "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:",
+      "Daily atropine + nightly Ortho-K = effective myopia control and all-day clear vision.",
   },
 ];
 
