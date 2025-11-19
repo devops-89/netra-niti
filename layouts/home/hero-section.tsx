@@ -176,7 +176,6 @@ const HeroSection = () => {
                 playsInline
                 autoPlay
                 muted
-                loop
                 style={{
                   width: phone ? "100%" : "80%",
                   borderRadius: "20px",
