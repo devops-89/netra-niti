@@ -18,7 +18,7 @@ import prevention4 from "@/homepage/preventing/eye-checkup.jpg";
 import appointment1 from "@/homepage/appointment/schedule.jpg";
 import appointment2 from "@/homepage/appointment/meet.jpg";
 import appointment3 from "@/homepage/appointment/clear-plan.jpg";
-import profile from "@/homepage/testimonial/avatar.jpg";
+import profile from "@/homepage/testimonial/user_icon.svg";
 import { YouTube, X, Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 import process1 from "@/services/process-1.png";
 import process2 from "@/services/process-2.png";
@@ -143,45 +143,38 @@ export const APPOINTMENT_CARD_DATA: APPOINTMENT_CARD_PROPS[] = [
 export const TESTIMONIAL_CARD_DATA: TESTIMONIAL_CARD_PROPS[] = [
   {
     img: profile,
-    name: "John Anderson",
-    designation: "CEO at Innovate Solutions",
+    name: "Ashish Jain",
+    designation: "CEO & Founder, Edunext",
     description:
-      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+      "NxTGen Netra Niti is doing remarkable work in preventive eye care for children. Their scientific approach, advanced lenses, and personalized guidance truly make a difference. As a parent and an education leader, I highly appreciate their mission to protect children's vision and ensure a brighter, healthier future.",
   },
   {
     img: profile,
-    name: "John Anderson",
-    designation: "CEO at Innovate Solutions",
+    name: "Dr. Dinesh Goel",
+    designation: "Ophthalmologist",
     description:
-      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+      "NxTGen Netra Niti brings a truly progressive approach to managing childhood myopia. Their advanced diagnostic tools, modern lens technology, and child-centered care make a remarkable difference in long-term eye health. I fully support and recommend their initiative for parents seeking reliable and scientific vision solutions",
   },
   {
     img: profile,
-    name: "John Anderson",
-    designation: "CEO at Innovate Solutions",
+    name: "Deepika Jain",
+    designation: "Parent",
     description:
-      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+      "As a parent, I’m truly grateful to NxTGen Netra Niti. Their expert guidance and advanced myopia-control lenses have made a big difference in my child’s eyesight. I’ve seen real improvement and so much relief knowing my child’s vision is being protected with the right care.",
   },
   {
     img: profile,
-    name: "John Anderson",
-    designation: "CEO at Innovate Solutions",
+    name: " Dr. Sadhna Anand",
+    designation: "Pediatrician",
     description:
-      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+      "NxTGen Netra Niti is a much-needed initiative in today’s time. Their focus on scientific myopia control, early diagnosis, and child-friendly care is truly commendable. I confidently recommend their program to parents who want the best and most effective vision care for their children.",
   },
   {
     img: profile,
-    name: "John Anderson",
-    designation: "CEO at Innovate Solutions",
+    name: "Dr. Mukesh Panwar",
+    designation: "Pediatrician",
     description:
-      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
-  },
-  {
-    img: profile,
-    name: "John Anderson",
-    designation: "CEO at Innovate Solutions",
-    description:
-      "Their attention to detail and creative design approach transformed our website into a visually stunning and highly functional platform. We’ve seen a 30% increase in traffic since the relaunch. I highly recommend them to anyone seeking professional web design services!",
+      "NxTGen Netra Niti is transforming the way we approach children’s eye health. Their evidence-based methods, modern lenses, and dedicated team make myopia control truly effective. I recommend their services to parents who want reliable, scientific, and child-focused eye care.",
   },
 ];
 
