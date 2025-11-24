@@ -1,17 +1,16 @@
-"use client";
 import HomePageLayout from "@/layouts/home";
-import HeroSection from "@/layouts/home/hero-section";
-import { Box } from "@mui/material";
-import Aos from "aos";
-import { useEffect } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Netra Niti – India’s First Childhood Myopia Prevention Network",
+  description:
+    "Netra Niti is India’s first dedicated network for childhood myopia prevention, offering expert pediatric eye care, myopia management & high-quality eyewear to protect",
+};
 
 export default function Home() {
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
-    <Box>
+    <>
       <HomePageLayout />
-    </Box>
+    </>
   );
 }
