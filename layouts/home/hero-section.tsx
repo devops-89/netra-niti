@@ -30,7 +30,7 @@ const HeroSection = () => {
     <Container maxWidth="lg">
       <Box
         sx={{
-          height: { lg: "115vh", xs: "100%" },
+          height: { lg: "100vh", xs: "100%" },
           position: "relative",
           overflow: "hidden",
           py: { xs: 10, lg: 0 },
