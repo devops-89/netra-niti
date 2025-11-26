@@ -10,7 +10,7 @@ const ContactHeroSection = () => {
   return (
     <Box
       sx={{
-        height: { lg: "100vh", xs: "100%" },
+        height: { lg: "80vh", xs: "100%" },
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

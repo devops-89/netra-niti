@@ -40,7 +40,14 @@ const Navbar = () => {
       <Head>
         <link rel="icon" href="/netra_niti_favicon.png"></link>
       </Head>
-      <Box sx={{ position: "sticky", top: { lg: 10, xs: 30 }, zIndex: 1200 }}>
+      <Box
+        sx={{
+          position: "sticky",
+          top: { lg: 50, xs: 30 },
+          zIndex: 1200,
+          mt: 5,
+        }}
+      >
         <Container maxWidth="lg">
           <Box sx={{ display: { lg: "block", xs: "none" } }}>
             <Stack
