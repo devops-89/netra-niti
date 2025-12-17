@@ -4,9 +4,8 @@ import { BLOG_CARD_DATA } from "@/assets/generic-data";
 import BlogsCard from "./blogs-card";
 import ServiceHeading from "../../services/components/service-heading";
 import { COLORS } from "@/utils/enum";
-import { display } from "@mui/system";
+import { display, style } from "@mui/system";
 import { validateHeaderName } from "http";
-
 const BlogsSection = () => {
   const displayBlogs = BLOG_CARD_DATA.slice(0, 4);
 
@@ -20,7 +19,7 @@ const BlogsSection = () => {
             borderTopRightRadius: "30px",
             py: 6,
             mt: 1,
-            px: { lg: 0, xs: 4 },
+            px: { lg: 6, xs: 4 },
           }}
         >
           <Box>
@@ -29,12 +28,12 @@ const BlogsSection = () => {
 
           <Grid
             container
-            spacing={{ lg: 12, xs: 5 }}
+            spacing={{ lg: 5, xs: 5 }}
             mt={1}
             justifyContent={"center"}
           >
             {displayBlogs.map((blog, index) => (
-              <Grid size={{ lg: 6, xs: 12 }} key={index}>
+              <Grid size={{ lg: 4, xs: 12 }} key={index}>
                 <BlogsCard
                   img={blog.img}
                   title={blog.title}

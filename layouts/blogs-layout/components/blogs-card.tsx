@@ -15,19 +15,28 @@ const BlogsCard = ({ img, title, description, slug }: BLOG_CARD_PROPS) => {
 
   return (
     <Box sx={{ mt: 2 }}>
-      <Card>
-        <Image src={img} alt="" style={{ width: "100%", height: "auto" }} />
+      <Card sx={{ borderRadius: 4 }}>
+        <Link href={`/blogs/${slug}`}>
+          <Image src={img} alt="" style={{ width: "100%", height: "auto" }} />
+        </Link>
         <CardContent>
-          <Link href={`/blogs/${slug}`}>
+          <Link href={`/blogs/${slug}`} style={{ textDecoration: "none" }}>
             <Typography
-              sx={{ fontSize: 20, fontFamily: poppins.style.fontFamily }}
+              sx={{
+                fontSize: 20,
+                fontFamily: poppins.style.fontFamily,
+                color: COLORS.PRIMARY,
+                "&:hover": {
+                  color: COLORS.SECONDARY,
+                },
+              }}
             >
               {title}
             </Typography>
           </Link>
 
           <Typography
-            sx={{ fontSize: 16, fontFamily: poppins.style.fontFamily, mt: 2 }}
+            sx={{ fontSize: 16, fontFamily: poppins.style.fontFamily, mt:1}}
           >
             {description}
           </Typography>

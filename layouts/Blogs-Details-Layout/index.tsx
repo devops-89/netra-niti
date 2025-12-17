@@ -31,7 +31,7 @@ const BlogDetailsLayout = () => {
 
   return (
     <div>
-      <Container maxWidth="lg" sx={{ mt: 8 }}>
+      <Container maxWidth="xl" sx={{ mt: 8 }}>
         {data?.img && (
           <Image
             src={data?.img}
@@ -40,20 +40,26 @@ const BlogDetailsLayout = () => {
           />
         )}
         <Box
-          sx={{ backgroundColor: COLORS.WHITE, p: 2, mt: 2, borderRadius: 2 }}
+          sx={{
+            backgroundColor: COLORS.WHITE,
+            p: 4,
+            mt: 5,
+            borderTopLeftRadius: "30px",
+            borderTopRightRadius: "30px",
+          }}
         >
-          <Typography fontSize={{ lg: 26, xs: 20, md: 17 }} fontWeight={700}>
+          <Typography fontSize={{ lg: 48, xs: 20, md: 17 }} fontWeight={700} color={COLORS.PRIMARY}>
             {data?.title}
           </Typography>
 
           {data?.details?.data?.map((val, i) => (
-            <Stack spacing={2} sx={{ mt: 2 }}>
-              <Typography fontSize={{ lg: 20, xs: 16 }} fontWeight={600}>
+            <Stack spacing={1} sx={{ mt: 4 }}>
+              <Typography fontSize={{ lg: 20, xs: 16 }} fontWeight={600} color={COLORS.SECONDARY}>
                 {val.subTitle}
               </Typography>
               {val.detailDescription.map((item, index) => (
                 <>
-                  <Typography fontSize={{ lg: 18, xs: 15 }}>
+                  <Typography fontSize={{ lg: 18, xs: 15 }} lineHeight={1.8} fontWeight={400}>
                     {item.description}
                   </Typography>
 
