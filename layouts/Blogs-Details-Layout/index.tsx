@@ -31,19 +31,19 @@ const BlogDetailsLayout = () => {
 
   return (
     <div>
-      <Container maxWidth="xl" sx={{ mt: 8 }}>
+      <Container maxWidth="xl" sx={{ mt: 5 }}>
         {data?.img && (
           <Image
             src={data?.img}
             alt=""
-            style={{ width: phone ? 380 : "100%", height: "auto" }}
+            style={{ width: phone ? 310 : "100%", height: "auto" }}
           />
         )}
         <Box
           sx={{
             backgroundColor: COLORS.WHITE,
             p: 4,
-            mt: 5,
+            mt: 4,
             borderTopLeftRadius: "30px",
             borderTopRightRadius: "30px",
           }}
@@ -96,5 +96,9 @@ const BlogDetailsLayout = () => {
     </div>
   );
 };
+let user:{
+    name:string,
+    email:string,
+}
 
 export default BlogDetailsLayout;
