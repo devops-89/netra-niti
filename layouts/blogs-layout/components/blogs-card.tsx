@@ -19,7 +19,7 @@ const BlogsCard = ({ img, title, description, slug }: BLOG_CARD_PROPS) => {
         <Link href={`/blogs/${slug}`}>
           <Image src={img} alt="" style={{ width: "100%", height: "auto" }} />
         </Link>
-        <CardContent>
+        <CardContent sx={{ height: "20vh" }}>
           <Link href={`/blogs/${slug}`} style={{ textDecoration: "none" }}>
             <Typography
               sx={{
