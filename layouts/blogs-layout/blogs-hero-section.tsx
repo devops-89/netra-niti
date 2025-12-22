@@ -1,66 +1,58 @@
+// import { Metadata } from 'next'
 import { COLORS } from "@/utils/enum";
 import { fancake, poppins } from "@/utils/fonts";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import React from "react";
-import heroImage from "@/contact/hero-section.png";
-import Image from "next/image";
+import CountUpCard from "@/layouts/about/components/count-up-card";
 import { ABOUT_COUNTER_NUMBER } from "@/assets/generic-data";
-import CountUpCard from "../about/components/count-up-card";
-const ContactHeroSection = () => {
+import Image from "next/image";
+import heroImage from "@/public/images/blogs/blogs-hero-section.png";
+import React from "react";
+const BlogsPage = () => {
   return (
     <Box
       sx={{
-        height: { lg: "80vh", xs: "100%" },
+        height: { lg: "80", xs: "100%" },
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         py: 10,
       }}
     >
-      <Container>
-        <Grid container spacing={5}>
+      <Container maxWidth="lg">
+        <Grid container spacing={5} alignItems="center">
           <Grid size={{ lg: 6, xs: 12 }}>
             <Typography
               sx={{
-                fontSize: { lg: 55, xs: 30 },
+                fontSize: { lg: 45, xs: 30 },
                 fontFamily: poppins.style.fontFamily,
                 color: COLORS.WHITE,
+                letterSpacing: "-2.55px",
               }}
             >
-              At
+              Insightful stories for{" "}
+              <Typography
+                component={"span"}
+                sx={{
+                  fontFamily: fancake.style.fontFamily,
+                  fontSize: { lg: 89, xs: 60 },
+                  color: COLORS.PRIMARY,
+                  letterSpacing: "-2.55px",
+                }}
+              >
+                Brighter Vision
+              </Typography>
             </Typography>
             <Typography
               sx={{
-                fontSize: { lg: 55, xs: 30 },
-                fontFamily: fancake.style.fontFamily,
-                color: COLORS.PRIMARY,
-                lineHeight: 1.1,
-              }}
-            >
-              NetraNiti,
-            </Typography>
-
-            <Typography
-              sx={{
-                fontSize: { lg: 55, xs: 30 },
-                fontFamily: poppins.style.fontFamily,
-                color: COLORS.WHITE,
-              }}
-            >
-              your child’s vision is our mission
-            </Typography>
-            <Typography
-              sx={{
-                fontSize: { lg: 25, xs: 16 },
-                fontFamily: poppins.style.fontFamily,
-                color: COLORS.WHITE,
                 mt: 2,
+                fontFamily: poppins.style.fontFamily,
+                fontSize: { lg: 20, xs: 16 },
+                color: COLORS.WHITE,
               }}
             >
-              we’re committed to guiding every step towards brighter, clearer
-              tomorrows.
+              Learn, explore, and stay informed with blogs designed to support
+              your child’s eye health and everyday vision needs.
             </Typography>
-
             <Grid container sx={{ mt: 4 }} spacing={3}>
               {ABOUT_COUNTER_NUMBER.map((val, i) => (
                 <Grid size={4} key={i}>
@@ -77,7 +69,7 @@ const ContactHeroSection = () => {
             <Image
               src={heroImage}
               alt=""
-              style={{ width: "100%", height: 600, objectFit: "cover" }}
+              style={{ width: "100%", height: "auto" }}
             />
           </Grid>
         </Grid>
@@ -86,4 +78,4 @@ const ContactHeroSection = () => {
   );
 };
 
-export default ContactHeroSection;
+export default BlogsPage;

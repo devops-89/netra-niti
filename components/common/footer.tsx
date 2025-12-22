@@ -52,7 +52,7 @@ const Footer = () => {
               sx={{ my: 5 }}
             >
               {FOOTER_SOCIAL_ICONS.map((val, i) => (
-                <IconButton key={i}>
+                <IconButton key={i} LinkComponent={"a"} href={val.url}>
                   <val.icon sx={{ color: COLORS.BLACK }} />
                 </IconButton>
               ))}

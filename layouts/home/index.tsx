@@ -1,5 +1,7 @@
+"use client";
 import { Box, Container } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
 import HeroSection from "./hero-section";
 import ServiceSection from "./services-section";
 import { COLORS } from "@/utils/enum";
@@ -10,6 +12,10 @@ import SupporativeCare from "./supporative-care";
 import HomeTestimonial from "./home-testimonial";
 
 const HomePageLayout = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <Box>
       <HeroSection />

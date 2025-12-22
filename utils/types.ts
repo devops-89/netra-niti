@@ -1,3 +1,4 @@
+"use client";
 import { SxProps, Theme } from "@mui/material";
 import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
@@ -55,4 +56,17 @@ export interface CONTACT_CARD_PROPS {
   img: StaticImageData;
   title: string;
   description: string;
+}
+
+export interface BLOG_DETAILS_DATA {
+  subTitle: string;
+  detailDescription: { description: string; list?: LIST[] }[];
+}
+
+export interface BLOG_CARD_PROPS {
+  img: StaticImageData;
+  title: string;
+  description: string;
+  slug?: string;
+  details?: { data: BLOG_DETAILS_DATA[] };
 }
