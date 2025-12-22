@@ -12,9 +12,16 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Netra Niti",
   description: "Netra Niti",
-  icons: {
-    icon: "/netra_niti_favicon_white.png",
-  },
+  icons: [
+    {
+      url: "/netra_niti_web_favicon_white.png",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      url: "/netra_niti_web_favicon_black.png",
+      media: "(prefers-color-scheme: dark)",
+    },
+  ],
   verification: {
     google: "U54OnTcKRiXWJfFhd4GRMMF8KiL3VRN53iaZZNyq_8U",
   },
