@@ -1,7 +1,7 @@
 import AboutLayout from "@/layouts/about";
 import { Metadata } from "next";
 import React from "react";
-
+// ad metadata
 export const metadata: Metadata = {
   title: "About Netra Niti – Child Eye Care & Myopia Solutions for Kids",
   description:
