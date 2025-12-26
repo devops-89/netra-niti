@@ -44,6 +44,7 @@ import contact3 from "@/contact/location.svg";
 import blog1 from "@/blogs/blog1.png";
 import blog2 from "@/blogs/blog2.png";
 import blog3 from "@/blogs/blog3.png";
+// import { title } from "process";
 export const navbar_links = [
   {
     label: "Home",
@@ -376,8 +377,11 @@ export const BLOG_CARD_DATA: BLOG_CARD_PROPS[] = [
     title: "Healthy Eyes, Happy Childhood",
     description: "Why Early Eye Care Is Non-Negotiable.",
     slug: "healthy-eyes-happy-childhood",
-    details: {
-      data: [
+    seoTitle:"NxtGen Netra-Niti: Kids Eye Checkup & Treatment for Nearsightedness in Children | Eye Care Solutions, Online Eye Test & Vision Therapy for Kids",
+    seoDescription:"NxtGen Netra-Niti: Kids Eye Checkup & Treatment for Nearsightedness in Children with advanced eye care solutions. Book an online eye test for kids and start effective vision therapy for kids today.",
+    seoKeywords:"NxtGen Netra-Niti, Kids eye checkup, Treatment for nearsightedness in children, Eye care solutions for children, Online eye test for kids, Vision therapy for kids.",
+      details:{
+        data: [
         {
           subTitle: "Why Early Eye Care Is Non-Negotiable",
           detailDescription: [
@@ -506,7 +510,9 @@ export const BLOG_CARD_DATA: BLOG_CARD_PROPS[] = [
     title: "Myopia Needs More Than Glasses",
     description: "Understanding Nearsightedness in Children",
     slug: "myopia-needs-more-than-glasses",
-    details: {
+    seoTitle:"NxtGen Netra-Niti: Eye Doctor for Kids | Early Myopia Treatment for Kids & Best Pediatric Eye Hospital for Treatment for Nearsightedness in Children",
+    seoDescription:"NxtGen Netra-Niti: Consult an eye doctor for kids for early myopia treatment for kids at the best pediatric eye hospital. Get expert treatment for nearsightedness in children with advanced care.",
+    seoKeywords:"NxtGen Netra-Niti, Eye Doctor for Kids, Early Myopia Treatment for Kids, Best Pediatric Eye Hospital, Treatment for Nearsightedness in Children",    details: {
       data: [
         {
           subTitle: "Understanding Nearsightedness in Children",
@@ -589,6 +595,9 @@ export const BLOG_CARD_DATA: BLOG_CARD_PROPS[] = [
     title: "Screens, School, and Young Eyes",
     description: "The Digital Shift",
     slug: "screens-school-and-young-eyes",
+    seoTitle:"NxtGen Netra-Niti: Online Eye Test for Kids | Vision Therapy for Kids, Digital Eye Care for Kids & Eye Test for Children at the Best Eye Hospital",
+    seoDescription:"NxtGen Netra-Niti: Get an online eye test for kids with expert vision therapy for kids. Access digital eye care for kids and a complete eye test for children at the best eye hospital.",
+    seoKeywords:"NxtGen Netra-Niti, Online eye test for kids, Vision therapy for kids, Digital eye care for kids, Eye test for children, Best eye hospital",
     details:{
       data:[
         {

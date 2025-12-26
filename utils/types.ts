@@ -68,5 +68,8 @@ export interface BLOG_CARD_PROPS {
   title: string;
   description: string;
   slug?: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  seoKeywords?: string;
   details?: { data: BLOG_DETAILS_DATA[] };
 }
