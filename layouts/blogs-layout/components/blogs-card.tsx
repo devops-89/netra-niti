@@ -14,12 +14,36 @@ const BlogsCard = ({ img, title, description, slug }: BLOG_CARD_PROPS) => {
   // if (!blog) return null;
 
   return (
-    <Box sx={{ mt: 2 }}>
-      <Card sx={{ borderRadius: 4 }}>
+    <Box sx={{ mt: 2, height: "100%" }}>
+      <Card
+        sx={{
+          borderRadius: 4,
+          height: 400,
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
         <Link href={`/blogs/${slug}`}>
-          <Image src={img} alt="" style={{ width: "100%", height: "auto" }} />
+          <Box
+            sx={{
+              position: "relative",
+              width: "100%",
+              height: 240,
+              overflow: "hidden",
+            }}
+          >
+            <Image src={img} alt={title} fill style={{ objectFit: "cover" }} />
+          </Box>
         </Link>
-        <CardContent sx={{ height: "10vh" }}>
+        <CardContent
+          sx={{
+            flexGrow: 1,
+            display: "flex",
+            flexDirection: "column",
+            gap: 1,
+            // justifyContent: "space-between",
+          }}
+        >
           <Link href={`/blogs/${slug}`} style={{ textDecoration: "none" }}>
             <Typography
               sx={{
@@ -36,7 +60,12 @@ const BlogsCard = ({ img, title, description, slug }: BLOG_CARD_PROPS) => {
           </Link>
 
           <Typography
-            sx={{ fontSize: 16, fontFamily: poppins.style.fontFamily, mt:1}}
+            sx={{
+              fontSize: 16,
+              fontFamily: poppins.style.fontFamily,
+              mt: 1,
+              
+            }}
           >
             {description}
           </Typography>
