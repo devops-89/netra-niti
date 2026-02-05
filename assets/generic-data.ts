@@ -69,7 +69,7 @@ export const services_data_section: SERVICE_CARD_PROPS[] = [
     img: serviceImage1,
     heading: "School Vision Screenings",
     description:
-      "We provide comprehensive vision screening services for schools to help identify potential eyesight issues at an early stage. Our screenings are conducted by trained professionals using standard procedures to ensure accuracy, efficiency, and minimal disruption to the school schedule.",
+      "We provide comprehensive vision screening services for schools to help identify potential eyesight issues at an early stage.",
   },
   {
     img: serviceImage2,
