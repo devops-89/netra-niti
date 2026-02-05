@@ -69,7 +69,7 @@ export const services_data_section: SERVICE_CARD_PROPS[] = [
     img: serviceImage1,
     heading: "School Vision Screenings",
     description:
-      "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services",
+      "We provide comprehensive vision screening services for schools to help identify potential eyesight issues at an early stage. Our screenings are conducted by trained professionals using standard procedures to ensure accuracy, efficiency, and minimal disruption to the school schedule.",
   },
   {
     img: serviceImage2,
@@ -377,11 +377,14 @@ export const BLOG_CARD_DATA: BLOG_CARD_PROPS[] = [
     title: "Healthy Eyes, Happy Childhood",
     description: "Why Early Eye Care Is Non-Negotiable.",
     slug: "healthy-eyes-happy-childhood",
-    seoTitle:"NxtGen Netra-Niti: Kids Eye Checkup & Treatment for Nearsightedness in Children | Eye Care Solutions, Online Eye Test & Vision Therapy for Kids",
-    seoDescription:"NxtGen Netra-Niti: Kids Eye Checkup & Treatment for Nearsightedness in Children with advanced eye care solutions. Book an online eye test for kids and start effective vision therapy for kids today.",
-    seoKeywords:"NxtGen Netra-Niti, Kids eye checkup, Treatment for nearsightedness in children, Eye care solutions for children, Online eye test for kids, Vision therapy for kids.",
-      details:{
-        data: [
+    seoTitle:
+      "NxtGen Netra-Niti: Kids Eye Checkup & Treatment for Nearsightedness in Children | Eye Care Solutions, Online Eye Test & Vision Therapy for Kids",
+    seoDescription:
+      "NxtGen Netra-Niti: Kids Eye Checkup & Treatment for Nearsightedness in Children with advanced eye care solutions. Book an online eye test for kids and start effective vision therapy for kids today.",
+    seoKeywords:
+      "NxtGen Netra-Niti, Kids eye checkup, Treatment for nearsightedness in children, Eye care solutions for children, Online eye test for kids, Vision therapy for kids.",
+    details: {
+      data: [
         {
           subTitle: "Why Early Eye Care Is Non-Negotiable",
           detailDescription: [
@@ -510,9 +513,13 @@ export const BLOG_CARD_DATA: BLOG_CARD_PROPS[] = [
     title: "Myopia Needs More Than Glasses",
     description: "Understanding Nearsightedness in Children",
     slug: "myopia-needs-more-than-glasses",
-    seoTitle:"NxtGen Netra-Niti: Eye Doctor for Kids | Early Myopia Treatment for Kids & Best Pediatric Eye Hospital for Treatment for Nearsightedness in Children",
-    seoDescription:"NxtGen Netra-Niti: Consult an eye doctor for kids for early myopia treatment for kids at the best pediatric eye hospital. Get expert treatment for nearsightedness in children with advanced care.",
-    seoKeywords:"NxtGen Netra-Niti, Eye Doctor for Kids, Early Myopia Treatment for Kids, Best Pediatric Eye Hospital, Treatment for Nearsightedness in Children",    details: {
+    seoTitle:
+      "NxtGen Netra-Niti: Eye Doctor for Kids | Early Myopia Treatment for Kids & Best Pediatric Eye Hospital for Treatment for Nearsightedness in Children",
+    seoDescription:
+      "NxtGen Netra-Niti: Consult an eye doctor for kids for early myopia treatment for kids at the best pediatric eye hospital. Get expert treatment for nearsightedness in children with advanced care.",
+    seoKeywords:
+      "NxtGen Netra-Niti, Eye Doctor for Kids, Early Myopia Treatment for Kids, Best Pediatric Eye Hospital, Treatment for Nearsightedness in Children",
+    details: {
       data: [
         {
           subTitle: "Understanding Nearsightedness in Children",
@@ -595,103 +602,103 @@ export const BLOG_CARD_DATA: BLOG_CARD_PROPS[] = [
     title: "Screens, School, and Young Eyes",
     description: "The Digital Shift",
     slug: "screens-school-and-young-eyes",
-    seoTitle:"NxtGen Netra-Niti: Online Eye Test for Kids | Vision Therapy for Kids, Digital Eye Care for Kids & Eye Test for Children at the Best Eye Hospital",
-    seoDescription:"NxtGen Netra-Niti: Get an online eye test for kids with expert vision therapy for kids. Access digital eye care for kids and a complete eye test for children at the best eye hospital.",
-    seoKeywords:"NxtGen Netra-Niti, Online eye test for kids, Vision therapy for kids, Digital eye care for kids, Eye test for children, Best eye hospital",
-    details:{
-      data:[
+    seoTitle:
+      "NxtGen Netra-Niti: Online Eye Test for Kids | Vision Therapy for Kids, Digital Eye Care for Kids & Eye Test for Children at the Best Eye Hospital",
+    seoDescription:
+      "NxtGen Netra-Niti: Get an online eye test for kids with expert vision therapy for kids. Access digital eye care for kids and a complete eye test for children at the best eye hospital.",
+    seoKeywords:
+      "NxtGen Netra-Niti, Online eye test for kids, Vision therapy for kids, Digital eye care for kids, Eye test for children, Best eye hospital",
+    details: {
+      data: [
         {
-          subTitle:"The Digital Shift",
-          detailDescription:[
+          subTitle: "The Digital Shift",
+          detailDescription: [
             {
-              description:"Children today spend more time on screens than ever before. Online learning, homework, and entertainment have made digital eye care for kids a growing necessity."
-          
+              description:
+                "Children today spend more time on screens than ever before. Online learning, homework, and entertainment have made digital eye care for kids a growing necessity.",
             },
             {
-              description:"Excessive screen use can lead to eye strain, dryness, headaches, and difficulty focusing."
-          
-            }
-          ]
+              description:
+                "Excessive screen use can lead to eye strain, dryness, headaches, and difficulty focusing.",
+            },
+          ],
         },
         {
-          subTitle:"Warning Signs of Digital Eye Strain",
-          detailDescription:[
+          subTitle: "Warning Signs of Digital Eye Strain",
+          detailDescription: [
             {
-              description:"Symptoms include:",
-              list:[
+              description: "Symptoms include:",
+              list: [
                 {
-                  label:"Tired or watery eyes",
+                  label: "Tired or watery eyes",
                 },
                 {
-                  label:"Blurred vision",
+                  label: "Blurred vision",
                 },
                 {
-                  label:"Reduced attention span",
+                  label: "Reduced attention span",
                 },
                 {
-                  label:"Neck and shoulder discomfort",
+                  label: "Neck and shoulder discomfort",
                 },
               ],
             },
             {
-              description:"An early eye test for children can determine whether digital habits are affecting vision."
-            }
-    
-           
-          ]
+              description:
+                "An early eye test for children can determine whether digital habits are affecting vision.",
+            },
+          ],
         },
         {
-          subTitle:"Online Tests vs Clinical Exams",
-          detailDescription:[
+          subTitle: "Online Tests vs Clinical Exams",
+          detailDescription: [
             {
-              description:"An online eye test for kids may help identify basic vision concerns, but it cannot replace a complete clinical examination. Only a qualified pediatric optometrist can assess eye health accurately and recommend proper treatment."
-          
+              description:
+                "An online eye test for kids may help identify basic vision concerns, but it cannot replace a complete clinical examination. Only a qualified pediatric optometrist can assess eye health accurately and recommend proper treatment.",
             },
-           
-          ]
+          ],
         },
         {
-          subTitle:"Vision Therapy and Digital Stress",
-          detailDescription:[
+          subTitle: "Vision Therapy and Digital Stress",
+          detailDescription: [
             {
-              description:"Vision therapy for kids can help improve eye coordination, focusing ability, and visual endurance—especially for children struggling with prolonged screen exposure."
-          
+              description:
+                "Vision therapy for kids can help improve eye coordination, focusing ability, and visual endurance—especially for children struggling with prolonged screen exposure.",
             },
             {
-              description:"This therapy is often recommended as part of a broader eye care solution for children, under expert supervision."
+              description:
+                "This therapy is often recommended as part of a broader eye care solution for children, under expert supervision.",
             },
-           
-          ]
+          ],
         },
         {
-          subTitle:"Why Pediatric Hospitals Are Best",
-          detailDescription:[
+          subTitle: "Why Pediatric Hospitals Are Best",
+          detailDescription: [
             {
-              description:"A specialized child eye hospital offers structured care designed for young eyes. Parents seeking the best doctor for kids eyesight should prioritize hospitals known for pediatric expertise rather than general eye care centers."
-          
+              description:
+                "A specialized child eye hospital offers structured care designed for young eyes. Parents seeking the best doctor for kids eyesight should prioritize hospitals known for pediatric expertise rather than general eye care centers.",
             },
             {
-              description:"The best eye hospital for children combines technology, experience, and empathy."
+              description:
+                "The best eye hospital for children combines technology, experience, and empathy.",
             },
-           
-          ]
+          ],
         },
         {
-          subTitle:"A Clearer Path Forward",
-          detailDescription:[
+          subTitle: "A Clearer Path Forward",
+          detailDescription: [
             {
-              description:"Healthy vision is essential for academic success and emotional confidence. Regular checkups, expert guidance, and mindful screen habits ensure children grow with strong, comfortable eyesight."
-          
+              description:
+                "Healthy vision is essential for academic success and emotional confidence. Regular checkups, expert guidance, and mindful screen habits ensure children grow with strong, comfortable eyesight.",
             },
             {
-              description:"Choosing the best eye care hospital for children today protects their vision for years to come."
+              description:
+                "Choosing the best eye care hospital for children today protects their vision for years to come.",
             },
-           
-          ]
+          ],
         },
-       ],
-      
-    }
+      ],
+    },
   },
 
   // {
