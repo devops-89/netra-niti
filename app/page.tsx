@@ -2,9 +2,10 @@ import HomePageLayout from "@/layouts/home";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Netra Niti – India’s First Childhood Myopia Prevention Network",
+  title: "Netra Niti – India's Trusted Childhood Myopia Prevention Network",
   description:
-    "Netra Niti is India’s first dedicated network for childhood myopia prevention, offering expert pediatric eye care, myopia management & high-quality eyewear to protect",
+    "Netra Niti focuses on childhood myopia prevention through comprehensive pediatric eye care, evidence-based myopia management, and premium eyewear designed for growing eyes.",
+  keywords: ["Childhood myopia Prevention", "Childhood myopia treatment"],
 };
 
 export default function Home() {

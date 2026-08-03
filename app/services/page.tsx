@@ -4,9 +4,13 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Our Services – Netra Niti Pediatric Eye Care",
+  title: "Netra Niti Complete Child Eye Care Solutions",
   description:
     "Netra Niti specializes in pediatric myopia management, providing expert eye care, personalized treatment plans, and guidance to protect children’s vision.",
+  keywords: [
+    "Vision therapy for kids",
+    "Nearsightedness treatment for children",
+  ],
 };
 
 const Services = () => {
