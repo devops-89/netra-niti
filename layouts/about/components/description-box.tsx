@@ -18,6 +18,7 @@ const DescriptionBox = ({
   return (
     <div>
       <Typography
+        component="h2"
         sx={{
           fontSize: { lg: 45, xs: 30 },
           fontFamily: poppins.style.fontFamily,
@@ -28,6 +29,7 @@ const DescriptionBox = ({
         {heading}
       </Typography>
       <Typography
+        component="h3"
         sx={{
           fontSize: { lg: 25, xs: 16 },
           fontFamily: poppins.style.fontFamily,

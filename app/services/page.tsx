@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     "Vision therapy for kids",
     "Nearsightedness treatment for children",
   ],
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 const Services = () => {

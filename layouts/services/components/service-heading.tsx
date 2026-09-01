@@ -7,6 +7,7 @@ const ServiceHeading = ({ label }: { label: string }) => {
   return (
     <Box>
       <Typography
+        component="h2"
         sx={{
           fontSize: { lg: 55, xs: 30 },
           fontFamily: poppins.style.fontFamily,

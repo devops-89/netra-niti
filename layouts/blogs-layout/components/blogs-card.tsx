@@ -46,6 +46,7 @@ const BlogsCard = ({ img, title, description, slug }: BLOG_CARD_PROPS) => {
         >
           <Link href={`/blogs/${slug}`} style={{ textDecoration: "none" }}>
             <Typography
+              component="h3"
               sx={{
                 fontSize: 20,
                 fontFamily: poppins.style.fontFamily,

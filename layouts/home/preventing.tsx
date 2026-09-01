@@ -15,6 +15,7 @@ const Preventing = () => {
     <Box sx={{ pt: 10 }}>
       <Container maxWidth="lg">
         <Typography
+          component="h2"
           sx={{
             textAlign: "center",
             color: COLORS.SECONDARY,

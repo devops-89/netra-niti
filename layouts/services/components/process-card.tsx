@@ -29,6 +29,7 @@ const ProcessCard = ({ img, heading, description }: PROCESS_CARD_PROPS) => {
         <Image src={img} alt="" width={50} />
       </Box>
       <Typography
+        component="h3"
         sx={{
           fontFamily: poppins.style.fontFamily,
           textAlign: "center",

@@ -43,6 +43,7 @@ const NetraNitiSection = () => {
               Netra Niti
             </Typography>
             <Typography
+              component="h2"
               sx={{
                 fontFamily: poppins.style.fontFamily,
                 fontSize: { lg: 45, xs: 25 },

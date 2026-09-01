@@ -21,6 +21,7 @@ const ContactHeroSection = () => {
         <Grid container spacing={5}>
           <Grid size={{ lg: 6, xs: 12 }}>
             <Typography
+              component="h2"
               sx={{
                 fontSize: { lg: 55, xs: 30 },
                 fontFamily: poppins.style.fontFamily,
@@ -30,6 +31,7 @@ const ContactHeroSection = () => {
               At
             </Typography>
             <Typography
+              component="h2"
               sx={{
                 fontSize: { lg: 55, xs: 30 },
                 fontFamily: fancake.style.fontFamily,
@@ -41,6 +43,7 @@ const ContactHeroSection = () => {
             </Typography>
 
             <Typography
+              component="h1"
               sx={{
                 fontSize: { lg: 55, xs: 30 },
                 fontFamily: poppins.style.fontFamily,

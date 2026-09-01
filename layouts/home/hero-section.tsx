@@ -76,6 +76,7 @@ const HeroSection = () => {
               className="animate__animated animate__backInLeft"
             >
               <Typography
+                component="h1"
                 sx={{
                   fontFamily: poppins.style.fontFamily,
                   color: COLORS.WHITE,

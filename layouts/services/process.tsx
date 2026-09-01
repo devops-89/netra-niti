@@ -9,6 +9,7 @@ const Process = () => {
     <Box sx={{ py: 7 }}>
       <Container>
         <Typography
+          component="h2"
           sx={{
             textAlign: "center",
             fontFamily: poppins.style.fontFamily,

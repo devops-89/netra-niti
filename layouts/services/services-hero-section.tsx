@@ -24,6 +24,7 @@ const ServicesHeroSection = () => {
         <Grid container alignItems={"center"}>
           <Grid size={{ lg: 6, xs: 12 }}>
             <Typography
+              component="h1"
               sx={{
                 fontSize: { lg: 54, xs: 35 },
                 fontFamily: poppins.style.fontFamily,

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description:
     "Find expert guidance on myopia prevention with proven strategies, routine eye care, and vision-friendly habits to keep your eyes healthy.",
   keywords: ["Eye care for kids", "Child vision screening"],
+  alternates: {
+    canonical: "/contact-us",
+  },
 };
 
 const ContactUs = () => {

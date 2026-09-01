@@ -50,6 +50,7 @@ const ServiceSection = () => {
                     spacing={3}
                   >
                     <Typography
+                      component="h2"
                       sx={{
                         fontSize: { lg: 50, xs: 30 },
                         color: COLORS.SECONDARY,

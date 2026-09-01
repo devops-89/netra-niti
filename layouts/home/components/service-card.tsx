@@ -22,6 +22,7 @@ const ServiceCard = ({ img, heading, description }: SERVICE_CARD_PROPS) => {
         }}
       />
       <Typography
+        component="h3"
         sx={{
           fontSize: 20,
           fontFamily: poppins.style.fontFamily,

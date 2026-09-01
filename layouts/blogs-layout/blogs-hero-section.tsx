@@ -22,6 +22,7 @@ const BlogsPage = () => {
         <Grid container spacing={5} alignItems="center">
           <Grid size={{ lg: 6, xs: 12 }}>
             <Typography
+              component="h1"
               sx={{
                 fontSize: { lg: 45, xs: 30 },
                 fontFamily: poppins.style.fontFamily,
@@ -43,6 +44,7 @@ const BlogsPage = () => {
               </Typography>
             </Typography>
             <Typography
+              component="h2"
               sx={{
                 mt: 2,
                 fontFamily: poppins.style.fontFamily,

@@ -10,6 +10,7 @@ import Script from "next/script";
 import "swiper/css";
 import "./globals.css";
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.netraniti.com"),
   title: "Netra Niti",
   description: "Netra Niti",
   icons: [

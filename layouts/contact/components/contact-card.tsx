@@ -24,6 +24,7 @@ const Contactcard = ({ img, title, description }: CONTACT_CARD_PROPS) => {
             primary={title}
             secondary={description}
             primaryTypographyProps={{
+              component: "h3",
               fontFamily: poppins.style.fontFamily,
               fontSize: 20,
             }}

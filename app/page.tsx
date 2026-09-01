@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description:
     "Netra Niti focuses on childhood myopia prevention through comprehensive pediatric eye care, evidence-based myopia management, and premium eyewear designed for growing eyes.",
   keywords: ["Childhood myopia Prevention", "Childhood myopia treatment"],
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function Home() {

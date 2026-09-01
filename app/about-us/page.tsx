@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "About Netra Niti – Child Eye Care & Myopia Solutions for Kids",
   description:
     "Worried about your child’s eyesight? Netra Niti provides expert pediatric eye care, myopia management, and quality eyewear to keep their vision healthy",
+  alternates: {
+    canonical: "/about-us",
+  },
 };
 
 const Aboutus = () => {
