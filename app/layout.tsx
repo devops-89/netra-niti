@@ -55,6 +55,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "Netra Niti",
+  "alternateName": "NxtGen Netra Niti",
+  "url": "https://www.netraniti.com/",
+  "logo": "https://www.netraniti.com/_next/static/media/logo.d814dbed.svg",
+  "sameAs": [
+    "https://www.facebook.com/NxtGenNetraNiti/",
+    "https://x.com/NxtGenNetraNiti",
+    "https://www.instagram.com/nxtgennetraniti/",
+    "https://www.youtube.com/@NxtGenNetraNiti",
+    "https://www.linkedin.com/company/108411654/admin/dashboard/"
+  ]
+}`
+          }}
+        />
         <Navbar />
         {children}
         <Container maxWidth="xl">
