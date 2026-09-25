@@ -11,8 +11,9 @@ import "swiper/css";
 import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.netraniti.com"),
-  title: "Netra Niti",
-  description: "Netra Niti",
+  title: "Netra Niti – India's Trusted Childhood Myopia Prevention Network",
+  description:
+    "Netra Niti focuses on childhood myopia prevention through comprehensive pediatric eye care, evidence-based myopia management, and premium eyewear designed for growing eyes",
   icons: [
     {
       url: "/netra_niti_web_favicon_white.png",
@@ -23,6 +24,27 @@ export const metadata: Metadata = {
       media: "(prefers-color-scheme: dark)",
     },
   ],
+  openGraph: {
+    title: "Netra Niti – India's Trusted Childhood Myopia Prevention Network",
+    siteName: "Netra-Niti",
+    url: "https://www.netraniti.com/",
+    description:
+      "Netra Niti focuses on childhood myopia prevention through comprehensive pediatric eye care, evidence-based myopia management, and premium eyewear designed for growing eyes",
+    type: "website",
+    images: [
+      {
+        url: "https://www.netraniti.com/_next/static/media/logo.d814dbed.svg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Netra-Niti",
+    title: "Netra Niti – India's Trusted Childhood Myopia Prevention Network",
+    description:
+      "Netra Niti focuses on childhood myopia prevention through comprehensive pediatric eye care, evidence-based myopia management, and premium eyewear designed for growing eyes",
+    images: ["https://www.netraniti.com/_next/static/media/logo.d814dbed.svg"],
+  },
   verification: {
     google: "U54OnTcKRiXWJfFhd4GRMMF8KiL3VRN53iaZZNyq_8U",
   },
