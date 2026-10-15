@@ -18,7 +18,8 @@ const BlogsCard = ({ img, title, description, slug }: BLOG_CARD_PROPS) => {
       <Card
         sx={{
           borderRadius: 4,
-          height: 400,
+          height: "100%",
+          minHeight: 400,
           display: "flex",
           flexDirection: "column",
         }}

@@ -9,7 +9,12 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const blog = BLOG_CARD_DATA.find((item) => item.slug === slug);
+  const blog = BLOG_CARD_DATA.find(
+    (item) =>
+      item.slug === slug ||
+      (slug === "advanced-myopia-treatment" &&
+        item.slug === "advanced-myopia-treatment-for-kids")
+  );
 
   if (!blog) {
     return {
@@ -22,6 +27,20 @@ export async function generateMetadata({
     title: blog.seoTitle,
     description: blog.seoDescription,
     keywords: blog.seoKeywords,
+    alternates: {
+      canonical: `/blogs/${blog.slug}`,
+    },
+    openGraph: {
+      title: blog.seoTitle,
+      description: blog.seoDescription,
+      url: `/blogs/${blog.slug}`,
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: blog.seoTitle,
+      description: blog.seoDescription,
+    },
   };
 }
 

@@ -24,7 +24,12 @@ const BlogDetailsLayout = () => {
   const [data, setData] = useState<BLOG_CARD_PROPS | null>(null);
 
   useEffect(() => {
-    const filteredData = BLOG_CARD_DATA.find((blog) => blog.slug === slug);
+    const filteredData = BLOG_CARD_DATA.find(
+      (blog) =>
+        blog.slug === slug ||
+        (slug === "advanced-myopia-treatment" &&
+          blog.slug === "advanced-myopia-treatment-for-kids")
+    );
     setData(filteredData as BLOG_CARD_PROPS);
   }, [slug]);
   const phone = useMediaQuery("(max-width:600px)");
@@ -35,8 +40,13 @@ const BlogDetailsLayout = () => {
         {data?.img && (
           <Image
             src={data?.img}
-            alt=""
-            style={{ width: phone ? 310 : "100%", height: "auto" }}
+            alt={data?.title || "Blog Image"}
+            priority
+            style={{
+              width: phone ? 310 : "100%",
+              height: "auto",
+              borderRadius: "16px",
+            }}
           />
         )}
         <Box
@@ -48,18 +58,32 @@ const BlogDetailsLayout = () => {
             borderTopRightRadius: "30px",
           }}
         >
-          <Typography fontSize={{ lg: 48, xs: 20, md: 17 }} fontWeight={700} color={COLORS.PRIMARY}>
+          <Typography
+            fontSize={{ lg: 48, xs: 24, md: 36 }}
+            fontWeight={700}
+            color={COLORS.PRIMARY}
+          >
             {data?.title}
           </Typography>
 
           {data?.details?.data?.map((val, i) => (
-            <Stack spacing={1} sx={{ mt: 4 }}>
-              <Typography fontSize={{ lg: 20, xs: 16 }} fontWeight={600} color={COLORS.SECONDARY}>
-                {val.subTitle}
-              </Typography>
+            <Stack spacing={1} sx={{ mt: 4 }} key={i}>
+              {val.subTitle && (
+                <Typography
+                  fontSize={{ lg: 22, xs: 18 }}
+                  fontWeight={600}
+                  color={COLORS.SECONDARY}
+                >
+                  {val.subTitle}
+                </Typography>
+              )}
               {val.detailDescription.map((item, index) => (
-                <>
-                  <Typography fontSize={{ lg: 18, xs: 15 }} lineHeight={1.8} fontWeight={400}>
+                <React.Fragment key={index}>
+                  <Typography
+                    fontSize={{ lg: 18, xs: 15 }}
+                    lineHeight={1.8}
+                    fontWeight={400}
+                  >
                     {item.description}
                   </Typography>
 
@@ -67,6 +91,7 @@ const BlogDetailsLayout = () => {
                     <List>
                       {item.list.map((list, j) => (
                         <ListItem
+                          key={j}
                           disablePadding
                           sx={{ alignItems: "flex-start" }}
                         >
@@ -87,7 +112,7 @@ const BlogDetailsLayout = () => {
                       ))}
                     </List>
                   )}
-                </>
+                </React.Fragment>
               ))}
             </Stack>
           ))}
@@ -96,9 +121,5 @@ const BlogDetailsLayout = () => {
     </div>
   );
 };
-let user:{
-    name:string,
-    email:string,
-}
 
 export default BlogDetailsLayout;

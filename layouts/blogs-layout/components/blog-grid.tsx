@@ -4,10 +4,8 @@ import { BLOG_CARD_DATA } from "@/assets/generic-data";
 import BlogsCard from "./blogs-card";
 import ServiceHeading from "../../services/components/service-heading";
 import { COLORS } from "@/utils/enum";
-import { display, style } from "@mui/system";
-import { validateHeaderName } from "http";
 const BlogsSection = () => {
-  const displayBlogs = BLOG_CARD_DATA.slice(0, 4);
+  const displayBlogs = BLOG_CARD_DATA;
 
   return (
     <Box>

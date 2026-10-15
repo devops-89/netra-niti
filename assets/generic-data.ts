@@ -44,6 +44,7 @@ import contact3 from "@/contact/location.svg";
 import blog1 from "@/blogs/blog1.png";
 import blog2 from "@/blogs/blog2.png";
 import blog3 from "@/blogs/blog3.png";
+import blog4 from "@/blogs/blog4.png";
 // import { title } from "process";
 export const navbar_links = [
   {
@@ -694,6 +695,236 @@ export const BLOG_CARD_DATA: BLOG_CARD_PROPS[] = [
             {
               description:
                 "Choosing the best eye care hospital for children today protects their vision for years to come.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    img: blog4,
+    title: "Advanced Myopia Treatment",
+    description: "Early Detection and Personalized Care at Netra Niti",
+    slug: "advanced-myopia-treatment-for-kids",
+    seoTitle: "Advanced Myopia Treatment for Kids | Netra Niti Care",
+    seoDescription:
+      "Learn the causes of myopia and why early myopia detection matters with personalized vision care and monitoring from Netra Niti.",
+    seoKeywords:
+      "Advanced Myopia Treatment for Kids, Netra Niti Care, Early Myopia Detection, Causes of Myopia, Orthokeratology, Low-Dose Atropine, Specialized Spectacle Lenses, Childhood Myopia Management",
+    details: {
+      data: [
+        {
+          subTitle: "Early Detection and Personalized Care",
+          detailDescription: [
+            {
+              description:
+                "Good vision plays an important role in a child's learning, confidence and everyday activities. The moment when far away objects become blurry, the child starts moving close to the television or having trouble reading the blackboard and even constantly squinting to see things clearly. These symptoms may show that the child has myopia, better known as nearsightedness.",
+            },
+            {
+              description:
+                "Myopia is not only about stronger glasses. In childhood, eyesight is still developing and the disorder may develop further, which makes its timely diagnosis, management and monitoring very important for today's children.",
+            },
+            {
+              description:
+                "At Netra Niti, the strategy is built on a comprehensive understanding of the child and not just on increasing spectacle strength.",
+            },
+          ],
+        },
+        {
+          subTitle: "Understanding Myopia in Growing Children",
+          detailDescription: [
+            {
+              description:
+                "Myopia occurs when the eye’s optical system focuses light before reaching the retina, making it fall short of focusing light on the retina. This leads to distant objects being blurry but near objects still clear.",
+            },
+            {
+              description:
+                "The important thing for a child’s growing years is not just, “What is the current spectacle number?” but also, “Is myopia increasing, and if so, what can be causing this increase?”",
+            },
+            {
+              description:
+                "It determines the approach taken to the treatment of myopia at Netra Niti because every child is not treated using the same approach but after taking into account their age, visual ability, lifestyle, family history, and clinical examination.",
+            },
+          ],
+        },
+        {
+          subTitle: "What Are the Causes of Myopia?",
+          detailDescription: [
+            {
+              description:
+                "Generally, there is no one particular cause that contributes to myopia in any child. Some of the reasons include genetics, eye development, and environmental factors among others.",
+            },
+            {
+              description:
+                "If there are cases of myopia in a family, the chances of myopia developing in the child are increased. Environmental factors also play a part in contributing to myopia. It differs depending on whether the child leads an outdoor life or spends most of their time indoors.",
+            },
+            {
+              description: "Common factors associated with myopia include:",
+              list: [
+                {
+                  label: "Parents or a close family member having myopia",
+                },
+                {
+                  label: "Insufficient time spent outdoors",
+                },
+                {
+                  label: "Long-term near tasks",
+                },
+                {
+                  label: "Lots of screen time",
+                },
+                {
+                  label: "Short viewing distances",
+                },
+                {
+                  label: "The natural development of the eye",
+                },
+              ],
+            },
+            {
+              description:
+                "This list does not imply that either reading or using the screen directly leads to myopia. It is essential to undergo a full examination to determine which factors have an influence on each specific case.",
+            },
+            {
+              description:
+                "At Netra Niti, the discussion about the lifestyle of children becomes part of the bigger picture instead of being limited by telling just to avoid the screen. The parents can get the advice concerning their child’s behavior.",
+            },
+          ],
+        },
+        {
+          subTitle: "Early Myopia Detection Can Change the Conversation",
+          detailDescription: [
+            {
+              description:
+                "A change in vision that happens gradually can often go unnoticed by children since they don’t realize when their eyesight becomes less clear. For this reason, waiting until a child complains might mean that there has been a visual problem for a while already.",
+            },
+            {
+              description:
+                "Early myopia detection could help detect those children who will require further testing and give parents the chance to know about a potential progression earlier.",
+            },
+            {
+              description:
+                "In Netra Niti, the screening process for childhood vision problems uses screening at schools and clinics. If a possible problem has been identified, however, the next step will not be writing a prescription. The child will have the chance to go through risk evaluation in order to make an adequate decision on the following actions.",
+            },
+            {
+              description:
+                "For this reason, the screening process in Netra Niti proves to be useful.",
+            },
+          ],
+        },
+        {
+          subTitle: "How Advanced Myopia Treatment Is Personalized",
+          detailDescription: [
+            {
+              description:
+                "Not all myopic children will receive the same type of treatment; rather, it will be decided based on a number of factors such as the child's age, their existing prescription, progression pattern, etc.",
+            },
+            {
+              description:
+                "At Netra Niti, available myopia-management approaches include specialized spectacle lenses, low-dose atropine, Orthokeratology and lifestyle guidance.",
+            },
+          ],
+        },
+        {
+          subTitle: "Specialized Spectacle Lenses",
+          detailDescription: [
+            {
+              description:
+                "Unlike the conventional lens that has been designed for single-vision glasses, some lenses have been developed for myopia control. Such lenses may help in vision correction while being used within the overall myopia control strategy for growing children.",
+            },
+          ],
+        },
+        {
+          subTitle: "Low-Dose Atropine",
+          detailDescription: [
+            {
+              description:
+                "Low-dose atropine therapy could be considered in suitable cases as part of professional management. Whether this is suitable or not, as well as the dose and schedule, will depend on the individual assessment of the patient.",
+            },
+          ],
+        },
+        {
+          subTitle: "Orthokeratology (Ortho-K)",
+          detailDescription: [
+            {
+              description:
+                "Orthokeratology, also known as Ortho-K, entails the use of specially made contact lenses that are worn when one is sleeping. This treatment reshapes the cornea and enables one to have good vision during daytime. It may also be used as a myopia control method for appropriate children.",
+            },
+            {
+              description:
+                "Ortho-K is one of the treatments considered in Netra Niti in relation to myopia management.",
+            },
+          ],
+        },
+        {
+          subTitle: "Monitoring Is Part of the Treatment Journey",
+          detailDescription: [
+            {
+              description:
+                "The issue of managing myopia goes beyond picking an intervention option and then forgetting about it. A child’s eye develops with time and his visual parameters may change.",
+            },
+            {
+              description:
+                "This is why there is need for continuous monitoring in Netra Niti after developing the management strategy. This ensures that any changes are monitored while also giving a chance to review if the chosen approach is still appropriate.",
+            },
+            {
+              description:
+                "This will also give the parent a better understanding of their child’s development rather than just focusing on changes in the spectacle power.",
+            },
+          ],
+        },
+        {
+          subTitle: "Why Parents Need a Complete Myopia-Care Approach",
+          detailDescription: [
+            {
+              description:
+                "Myopia care selection in children is more complex than just getting the child a better set of glasses. The parents require relevant knowledge on the child's eye condition, the risks involved, and options for management and follow-up care.",
+            },
+            {
+              description:
+                "This is achieved by Netra Niti through the provision of a process from detection and evaluation of the child’s vision problems to personal management and follow-up of those problems. This will enable parents to be actively involved in their children's vision development processes.",
+            },
+            {
+              description:
+                "Instead of providing an answer that may not suit all the patients in a standard way, it ensures that the patient's own needs inform the next step to take.",
+            },
+          ],
+        },
+        {
+          subTitle: "Protect Your Child's Vision With Timely Action",
+          detailDescription: [
+            {
+              description:
+                "Identifying vision changes early helps parents understand the issue and discuss appropriate care with an eye-care professional. Awareness about the nature of the problem allows parents to talk about the right course of action for eye care with a professional.",
+            },
+            {
+              description:
+                "Awareness about the reasons for the occurrence of myopia, early detection and exploring appropriate Advanced Myopia Treatment are a few ways of dealing with the situation proactively.",
+            },
+            {
+              description:
+                "At Netra Niti, the process goes way past treating blurry vision. Screening, assessment, advising on lifestyle, management and monitoring are combined to assist a developing vision of a child.",
+            },
+            {
+              description:
+                "For those parents who have observed any change in vision of their kids from a distance or have worries regarding the myopia progression, an eye evaluation by an expert is an efficient starting point.",
+            },
+          ],
+        },
+        {
+          subTitle: "Conclusion",
+          detailDescription: [
+            {
+              description:
+                "Childhood myopia should not just be seen as a requirement for the prescription of stronger lenses. It is important to detect changes in vision and know the various elements that impact the vision of the child.",
+            },
+            {
+              description:
+                "At Netra Niti, the approach is about more than just helping to see clearly. From screening and comprehensive testing to tailored management and advice, and continuous follow-ups on the changing needs of the growing child's vision, all is taken care of in order to ensure that parents get clarity about the issue as well as monitor changes in vision.",
+            },
+            {
+              description:
+                "If your child is experiencing difficulty in seeing faraway objects, frequently squinting, sitting close to objects or shows any change in visual habits, then undergoing a professional eye test could be one way forward.",
             },
           ],
         },
